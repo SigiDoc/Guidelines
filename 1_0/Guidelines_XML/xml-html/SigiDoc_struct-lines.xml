@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="struct-lines">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lines</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote>1 [1st line]</quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote>1 [1st line]</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <p>The numbers of legend’s lines should be continuous between obverse and reverse, thus including also the invocation (if applicable) and excluding an image's label or a sigla, often rendered in columns (<ref target="SigiDoc_struct-columns.html">see</ref>).
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <lb n="1"/>[text]
+                        <lb n="2"/>[text]
+                    </egXML>
+                </p>
+                <p>
+                    If the text of a line is engraved following the direction right to left, a <att>rend</att> attribute could be added to <gi>lb</gi>:    
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <lb n="2" rend="right-to-left"/>[text]
+                    </egXML>
+                </p>
+                <p>
+                    This will print an arrow (←) at the end of the line (with a <att>rend</att>’s value “left-to-right” an arrow in the opposite direction will be printed):
+                    <cit>
+                        <quote>2 [text] ←</quote>
+                    </cit>
+                </p>
+                <p>
+                    Crosses and decoration engraved on separate lines from the legend should not be part of the editorial transcription,
+                    while there are part of the diplomatic edition, where the tag should be:
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <lb n="0"/>[decoration]
+                    </egXML>
+                </p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

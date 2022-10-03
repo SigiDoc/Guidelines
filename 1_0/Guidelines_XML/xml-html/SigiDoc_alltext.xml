@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_all-guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_all-guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="alltext">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:id="homeGL">List of All Trancription Guidelines: Leidenisation</title>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile><graphic url=""></graphic></facsimile>
+    <text>
+        <body>
+            <div type="content">
+                <div type="intro">
+                <p>In this index is displayed a set of rules designed for SigiDoc in order to 
+                    establish a scholarly edition of the seals' legend: the following thematic list contains 
+                    all the mark-up necessary to visualise the Leiden symbols used in representing the 
+                    editorial interventions on the legend's transcription (e.g. ( ), [ ], &lt; &gt;, ..., etc.). Among the different sets of conventions available through the EpiDoc 
+                    stylesheet, SigiDoc is loosely based on those designed by <ref target="https://www.academia.edu/10020740/191_-_I_segni_diacritici_dieci_anni_dopo">Hans Krummrey 
+                        and Silvio Panciera</ref>, with variations intended to make some of them more 
+                    suitable for (Byzantine) sigillographic routines.</p>
+            </div>
+            <div type="contentList">
+                <head>Structure of the text</head>
+                <list>
+                    <item><ref target="SigiDoc_struct-lines.html">Lines</ref></item>
+                    <item><ref target="SigiDoc_struct-columns.html">Columns</ref></item>
+                    <item><ref target="SigiDoc_struct-linebreak.html">Words divided across lines</ref></item>
+                    <item><ref target="SigiDoc_struct-verseline.html">Verse lines (metrical legends)</ref></item>
+                </list>
+            </div>
+            <div type="contentList">
+                <head>Trancription</head>
+                <list>
+                    <item><ref target="SigiDoc_trans-cleartext.html">Clear text</ref></item>
+                    <item><ref target="SigiDoc_trans-uninterpreted.html">Uninterpreted characters: clear but incomprehensible letters</ref></item>
+                    <item><ref target="SigiDoc_trans-ambiguousdamaged.html">Ambiguous / damaged characters</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineknown.html">Lost lines: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineunknown.html">Lost lines: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineapproxquantity.html">Lost lines: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineapproxextent.html">Lost lines: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineknown.html">Illegible lines: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineunknown.html">Illegible lines: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineapproxquantity.html">Illegible lines: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineapproxextent.html">Illegible lines: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharknown.html">Lost characters: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharunknown.html">Lost characters: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharapproxquantity.html">Lost characters: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharapproxextent.html">Lost characters: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharnumeral.html">Lost characters: numerals</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharknown.html">Illegible characters: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharunknown.html">Illegible characters: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharapproxquantity.html">Illegible characters: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharapproxextent.html">Illegible characters: approximate extent</ref></item>
+                </list>
+            </div>
+            <div type="contentList">
+                <head>Form and appearance</head>
+                <list>
+                    <item><ref target="SigiDoc_form-supralinearetc.html">Supralinear lines, underlining</ref></item>
+                    <item><ref target="SigiDoc_form-raisedlowered.html">Raised or lowered characters</ref></item>
+                    <item><ref target="SigiDoc_form-ligature.html">Ligatured letters</ref></item>
+                    <item><ref target="SigiDoc_form-symbolnotmean.html">Symbols (cross, leaf, scroll, fleurette, etc.)</ref></item>
+                </list>
+            </div>
+            <div type="contentList">
+                <head>Editorial interventions</head>
+                <list>
+                    <item><ref target="SigiDoc_editorial-charrestored.html">Characters lost but restored</ref></item>
+                    <item><ref target="SigiDoc_editorial-charrestoredtentative.html">Characters lost and restored tentatively</ref></item>
+                    <item><ref target="SigiDoc_editorial-restoredincomplete.html">Word incompletely restored</ref></item>
+                    <item><ref target="SigiDoc_editorial-previouseditor.html">Text visible to previous editor, but now lost</ref></item>
+                    <item><ref target="SigiDoc_editorial-parallel.html">Text restored by comparison with parallel seal</ref></item>
+                    <item><ref target="SigiDoc_editorial-similar.html">Text restored by comparison with similar but not parallel seal</ref></item>
+                    <item><ref target="SigiDoc_editorial-superfluous.html">Superfluous letters/text suppressed by editor</ref></item>
+                    <item><ref target="SigiDoc_editorial-omitted.html">Omitted letters added by editor</ref></item>
+                    <item><ref target="SigiDoc_editorial-correction.html">Letters corrected by editor</ref></item>
+                    <item><ref target="SigiDoc_editorial-regularisation.html">Regularisation</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevfully.html">Expansion of abbreviation</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevuncert.html">Uncertain expansion of abbreviation</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevunknown.html">Abbreviation where expansion unknown</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevsymbol.html">Expansion of symbol</ref></item>
+                    <item><ref target="SigiDoc_editorial-monogram.html">Monograms</ref></item>
+                    <item><ref target="SigiDoc_editorial-monogramuncert.html">Monograms: uncertain solution</ref></item>
+                    <item><ref target="SigiDoc_editorial-monogramunsolved.html">Unsolved monograms</ref></item>
+                    <item><ref target="SigiDoc_editorial-editorsnote.html">Editor’s note</ref></item>
+                    <item><ref target="SigiDoc_editorial-altreading.html">Alternative readings</ref></item>
+                </list>
+            </div>
+            <div type="contentList">
+                <head>Interpretation</head>
+                <list>
+                    <item><ref target="SigiDoc_interp-numeralknown.html">Numerals: value known</ref></item>
+                    <item><ref target="SigiDoc_interp-numeralunknown.html">Numerals: value unknown because lost or illegible</ref></item>
+                    <item><ref target="SigiDoc_interp-numeraltick.html">Numerals: with tick symbol/diacritic</ref></item>
+                    <item><ref target="SigiDoc_interp-numeralrange.html">Numerals: with range of possible values</ref></item>
+                    <item><ref target="SigiDoc_interp-numeraldate.html">Numerals: dates (years and indictions)</ref></item>
+                    <item><ref target="SigiDoc_interp-multilanguage.html">Multi-language texts</ref></item>
+                </list>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

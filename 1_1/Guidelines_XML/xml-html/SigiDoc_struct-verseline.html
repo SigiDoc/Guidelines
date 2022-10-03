@@ -1,0 +1,74 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Verse lines (metrical legends)</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>none</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>
+            <pre class="teiCode">
+                        <span class="xmlTag">&lt;lg</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"metrical"</span><span class="xmlAttName"> met=</span><span class="xmlAttVal">""</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"true/false"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;l</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>[text]
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlTag">/&gt;</span>[text]
+                        <span class="xmlTag">&lt;/l&gt;</span>
+                        <span class="xmlTag">&lt;/lg&gt;</span>
+                    </pre>
+            </p>
+         
+         <p><span class="teiGi">lg</span> = a group of verse lines; must always contain a child <span class="teiGi">l</span>.
+         </p>
+         
+         <p>Each <span class="teiGi">l</span> = 1 metrical sequence, a single line of verse (ex. 12 syllables), different from
+            the physical/typographical line tagged with <span class="teiGi">lb</span>. Note that within the verse line (<span class="teiGi">l</span>) the beginning of each line of text on the support still needs to be marked with
+            an <span class="teiGi">lb</span>.
+         </p>
+         
+         <p>In <span class="teiAtt">met</span> attribute standard terms can be used in order to define the metre: dodecasyllabic,
+            iambic trimeter, political verse/decapentasyllabic verse, pseudo-pentameter, hexameter,
+            ...; or a representation for the metrical pattern can be used.
+         </p>
+         
+         <p>If the metrical legend is spanned over the two faces of the seal, <span class="teiGi">lg</span> should be duplicated on the 2 faces (because they are encoded in two separate <span class="teiGi">div</span>s) for a proper tagging, but without the <span class="teiAtt">ref</span> for indexing in the second (see Indexing).
+         </p>
+         
+         <p>A <span class="teiAtt">real</span> attribute (for ‘realisation’) attribute could be used with <span class="teiGi">l</span> to indicate any deviation from the pattern defined by the <span class="teiAtt">met</span> attribute which the encoder wishes to record: it could be used for a different kind
+            of meter or for an incomplete metre.
+         </p>
+         
+         <p>A <span class="teiAtt">subtype</span> attribute could be used with <span class="teiGi">lg</span>: the value should be ‘true’ if the same metre is respected in all the legend; if
+            not, ‘false’.
+         </p>
+         
+         <p>Notice that <span class="teiGi">lg</span> replaces the element <span class="teiGi">ab</span> in <span class="teiGi">div</span> <span class="teiAtt">type</span>="textpart" in a seal's edition, that is, <span class="teiGi">lg</span> should not be nested inside <span class="teiGi">ab</span>.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

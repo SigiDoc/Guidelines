@@ -1,0 +1,78 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Translation</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         <section class="code">
+            <pre class="teiCode">
+    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"translation"</span><span class="xmlTag">/&gt;</span>
+</pre>
+            </section>
+         
+         <h3>Explanation</h3>
+         
+         <p>A basic way to tag a translation would be:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"translation"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;p</span><span class="xmlTag">&gt;</span>...<span class="xmlTag">&lt;/p&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                </pre>
+         <p>The translation <span class="teiGi">div</span>s could bear <span class="teiAtt">subtype</span> attributes with values such as "literal", "poetic", "free" and so forth.
+         </p>
+         
+         <p><span class="teiGi">p</span> may contain <span class="teiGi">bibl</span> (for bibliographical references).
+         </p>
+         
+         <p><span class="teiGi">gap</span> and <span class="teiGi">supplied</span> could be used.
+         </p>
+         
+         <p>For transations in multiple languages. An edition might encode translations in more
+            than one modern language, which would then be differentiated by means of <span class="teiAtt">xml:lang</span> attributes:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"translation"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;p</span><span class="xmlTag">&gt;</span>+Constantinos Constantinou καὶ Anastasia ec Θeu basileis Romaion.<span class="xmlTag">&lt;/p&gt;</span>
+                        <span class="xmlTag">&lt;p</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"en"</span><span class="xmlTag">&gt;</span>Constantine son of Constantine, and Anastasia, in God emperors of the Romans.<span class="xmlTag">&lt;/p&gt;</span>
+                        <span class="xmlTag">&lt;p</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"fr"</span><span class="xmlTag">&gt;</span>Constantin fils de Constantin, et Anastasie, en Dieu empereurs des Romains.<span class="xmlTag">&lt;/p&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                </pre>
+         <p>Inside a same <span class="teiGi">div</span>, multiple <span class="teiGi">p</span>s should bear the translations, each one with the appropriate <span class="teiAtt">xml:lang</span>;
+            the first <span class="teiGi">p</span> is dedicated to the simple transcription of the legend, on a single line, without
+            Leiden conventions, and without <span class="teiAtt">xml:lang</span>, in order to get the Greek legend with all the languages.
+         </p>
+         
+         <p>The following signs should be used in all the <span class="teiGi">p</span>s:
+         </p>
+         
+         <p>/ (slash) in order to separate obverse and reverse</p>
+         
+         <p>. (dot) in order to separate label/sigla from the legend</p> 
+         
+         <p>| (vertical bar) to mark the end of a verse line in a metrical legend; if it is also
+            the end of the face, | / (vertical bar+slash).
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

@@ -1,0 +1,52 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Columns</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>ᵃ[1st col] – ᵇ[2nd col]</b></li>
+            <li>Diplomatic edition: <b>ᵃ[1st col] – ᵇ[2nd col]</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>Should be used for labels and sigla.
+            Note: the <span class="teiAtt">n</span>'s value is here alphabetical, in order to differentiate the <span class="teiGi">cb</span> from the <span class="teiGi">lb</span> in apparatus and commentary:
+            <pre class="teiCode">
+                        <span class="xmlTag">&lt;cb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"a"</span><span class="xmlTag">/&gt;</span>[text]
+                        <span class="xmlTag">&lt;cb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"b"</span><span class="xmlTag">/&gt;</span>[text]
+                    </pre>
+            </p>
+         
+         <p>
+            The transformation will separate with a – the content of each column, and to each
+            column will be assigned the letter (printed in superscript) used as <span class="teiAtt">n</span>’s attribute (the stylesheet can handle a max of 4 columns [a,b,c,d]):    
+            
+            <p class="quotation">ᵃ(Ὁ ἅγιος) Νι – ᵇκόλ(αος)</p>
+            
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

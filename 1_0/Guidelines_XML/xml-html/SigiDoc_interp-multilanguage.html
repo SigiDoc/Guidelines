@@ -1,0 +1,45 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Multi-language texts</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>abc αβγ</b></li>
+            <li>Diplomatic edition: <b>abc αβγ</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"edition"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"editorial/diplomatic"</span><span class="xmlAttName"> xml:space=</span><span class="xmlAttVal">"preserve"</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"grc-Latn"</span><span class="xmlTag">/&gt;</span>
+                </pre>
+         <p>In case of bilingual Greek/Latin legends, an <span class="teiAtt">xml:lang</span> with value 'grc-Latn' should be added to the <span class="teiGi">div</span> <span class="teiAtt">type</span>="edition" containing all the legend.
+         </p>
+         
+         <p>Note that this value is used here not only for different languages, but also for different
+            alphabets, i.e. for a Greek legend written in Latin alphabet.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="interp-numeraldate">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Numerals: dates (years and indictions)</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote>(see Explanation)</quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote>none</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <date>
+                        <expan><abbr>ἰ</abbr><ex>νδικτιῶνι</ex></expan> <num value="2">Β</num>
+                    </date> = ἰ(νδικτιῶνι) Β´
+                    
+                    <date>ἔτους <num value="512">φιβ</num></date> = ἔτους φιβ´
+                    
+                    <date>ἔτους
+                        <num value="512">φιβ</num>, ἐν <expan><abbr>ἰνδ</abbr><ex>ικτιῶνι</ex></expan> <num value="11">ια</num>
+                    </date> = ἔτους φιβ´, ἐν ἰνδ(ικτιῶνι) ια´ [year+indiction]
+                </egXML>
+                <p>Or it is possible to use the <gi>calendar</gi> element:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <teiHeader>
+                        <profileDesc>
+                            <calendarDesc>
+                                <calendar xml:id="indiction/byzantineWorldEra/..."></calendar>
+                            </calendarDesc>
+                        </profileDesc>
+                    </teiHeader>
+                    [...]
+                    <date when="*" when-custom="**" datingMethod="#indiction/byzantineWorldEra/...">
+                    </date>
+                </egXML>
+                <p>*Date according to the modern calendar.</p>
+                <p>**Date according to the ancient system (indiction, Byzantine world era, etc.).</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

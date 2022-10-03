@@ -1,0 +1,68 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Lines</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>1 [1st line]</b></li>
+            <li>Diplomatic edition: <b>1 [1st line]</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>The numbers of legend’s lines should be continuous between obverse and reverse, thus
+            including also the invocation (if applicable) and excluding an image's label or a
+            sigla, often rendered in columns (<a href="SigiDoc_struct-columns.html" target="_blank">see</a>).
+            <pre class="teiCode">
+                        <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>[text]
+                        <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlTag">/&gt;</span>[text]
+                    </pre>
+            </p>
+         
+         <p>
+            If the text of a line is engraved following the direction right to left, a <span class="teiAtt">rend</span> attribute could be added to <span class="teiGi">lb</span>:    
+            <pre class="teiCode">
+                        <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"right-to-left"</span><span class="xmlTag">/&gt;</span>[text]
+                    </pre>
+            </p>
+         
+         <p>
+            This will print an arrow (←) at the end of the line (with a <span class="teiAtt">rend</span>’s value “left-to-right” an arrow in the opposite direction will be printed):
+            
+            <p class="quotation">2 [text] ←</p>
+            
+         </p>
+         
+         <p>
+            Crosses and decoration engraved on separate lines from the legend should not be part
+            of the editorial transcription,
+            while there are part of the diplomatic edition, where the tag should be:
+            <pre class="teiCode">
+                        <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"0"</span><span class="xmlTag">/&gt;</span>[decoration]
+                    </pre>
+            </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

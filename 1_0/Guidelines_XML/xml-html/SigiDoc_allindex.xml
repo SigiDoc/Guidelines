@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_all-guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_all-guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="allindex">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:id="homeGL">List of All Indexing Guidelines</title>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile><graphic url=""></graphic></facsimile>
+    <text>
+        <body>
+            <div type="content">
+                <div type="intro">
+                <p>In this index is displayed the set of rules designed for SigiDoc in order to 
+                    extract (potentially) all the information coming from a seal's legend and 
+                    organise it in indices automatically generated through EFES. The following thematic list 
+                    contains the most relevant topics, unavoidable in sigillographic indices and traditionally appearing in most of the 
+                    sigillographic corpora: however, the ultimate choice about the themes represented in indices belongs to each projet, expanding or shortening this list, 
+                    but, especially in the latter case, it is strongly recommended to keep a common range of indices among the projects using SigiDoc, in order to ensure interoperability and searchability.</p>
+                <p>This represents the first step in creating and populating indices: for complete 
+                    guidance, please, follow the <ref target="https://github.com/EpiDoc/EFES/wiki/Indices">EFES guidelines</ref>.</p>
+            </div>
+            <div type="contentList">
+                <head>Indexing terms</head>
+                <list>
+                    <item><ref target="SigiDoc_indexing-persname.html">Personal names</ref></item>
+                    <item><ref target="SigiDoc_indexing-geo.html">Place/geographical names</ref></item>
+                    <item><ref target="SigiDoc_indexing-offices.html">Offices (Functions)</ref></item>
+                    <item><ref target="SigiDoc_indexing-dignities.html">Dignities</ref></item>
+                    <item><ref target="SigiDoc_indexing-titles.html">Titles</ref></item>
+                    <item><ref target="SigiDoc_indexing-officesdignities.html">Dignities and Offices</ref></item>
+                    <item><ref target="SigiDoc_indexing-miscellaneous.html">Miscellaneous</ref></item>
+                    <item><ref target="SigiDoc_indexing-invocation.html">Invocations</ref></item>
+                    <item><ref target="SigiDoc_indexing-metrical.html">Metrical legends</ref></item>
+                    <item><ref target="SigiDoc_indexing-legendcase.html">Legend’s case</ref></item>
+                    <item><ref target="SigiDoc_indexing-monogram.html">Monograms</ref></item>
+                    <item><ref target="SigiDoc_indexing-iconography.html">Iconography</ref></item>
+                    <item><ref target="SigiDoc_indexing-variants.html">Letter variants and special characters</ref></item>
+                    <item><ref target="SigiDoc_indexing-tokenlemma.html">Tokenisation and Lemmatisation</ref></item>
+                </list>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

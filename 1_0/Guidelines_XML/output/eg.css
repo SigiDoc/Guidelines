@@ -1,0 +1,30 @@
+/* <!-- From: https://wiki.tei-c.org/index.php/SyntaxHighlightingWithegXML --> */
+
+/* Example XML code */
+pre.teiCode {
+  white-space: pre;
+}
+
+
+/* Example XML code font */
+.xmlTag, .xmlAttName, .xmlAttVal, .teiCode{
+   font-family: monospace;
+}
+
+/* Example XML code: font weight bold */
+.xmlTag, .xmlAttName, .xmlAttVal{
+   font-weight: bold;
+}
+
+/* Example XML code: syntax highlighting (oXygen-like). */
+.xmlTag{
+   color: #000099;
+}
+
+.xmlAttName{
+   color: #f5844c;
+}
+
+.xmlAttVal{
+   color: #993300;
+}

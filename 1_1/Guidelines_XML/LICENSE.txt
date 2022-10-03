@@ -1,0 +1,12 @@
+============ LICENSE.txt for SigiDoc Guidelines ============
+
+The SigiDoc Guidelines are licensed under the terms of the Creative Commons Attribution 3.0 Unported license (https://creativecommons.org/licenses/by/3.0/).
+
+This means that you are free to share, copy and redistribute the material, or to adapt, remix, transform it, and to built upon it.
+
+This also means that you must give appropriate credit for this material, i.e. attribute it to the author(s) or licensor(s), and indicate if changes were made (but not in any way that suggests the licensor endorses you or your use).
+
+How to attribute this material?
+"The SigiDoc Guidelines" is copyright "the contributors" (Alessio Sopracasa, Martina Filosa, et alii), and citation should include a link to one of the following SigiDoc web pages: <https://sourceforge.net/projects/sigidoc/> or <http://sigidoc.huma-num.fr/>.
+
+For all the terms and conditions of the license, please visit <https://creativecommons.org/licenses/by/3.0/>.

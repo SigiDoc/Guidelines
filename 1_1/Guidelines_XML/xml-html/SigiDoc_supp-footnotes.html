@@ -1,0 +1,65 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Footnotes</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         <section class="code">
+            <pre class="teiCode">
+    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"commentary"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"footnotes"</span><span class="xmlTag">/&gt;</span>
+</pre>
+            </section>
+         
+         <h3>Explanation</h3>
+         
+         <p>For bibliographic references or more detailed notes.</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"commentary"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"footnotes"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;p</span><span class="xmlTag">&gt;</span>...<span class="xmlTag">&lt;/p&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                </pre>
+         <p><span class="teiGi">p</span> may contain <span class="teiGi">bibl</span> (for bibliographic references).
+         </p>
+         
+         <p>Note that the numbering must be manually entered both in the text and at the beginning
+            of each note.
+         </p>
+         
+         <p>One <span class="teiGi">p</span> per note.
+         </p>
+         
+         <p>The attribute <span class="teiAtt">subtype</span> differentiates this <span class="teiGi">div</span> <span class="teiAtt">type</span>="commentary" from the one designed for the text of the commentary (<span class="teiGi">div</span> <span class="teiAtt">type</span>="commentary" <span class="teiAtt">subtype</span>="text").
+         </p>
+         
+         <p>If footnotes are not necessary, there are 2 alternatives:</p>
+         
+         <p>1) nothing should be written in this <span class="teiGi">div</span>: a 'None' will appear below the title 'Footnotes';
+         </p>
+         
+         <p>2) to make the whole section disappear: in the SigiDoc/EFES stylesheet "htm-tpl-struct-sigidoc.xsl"
+            the <span class="teiGi">div</span> <span class="teiAtt">id</span>="footnotes" and the <span class="teiGi">div</span> <span class="teiAtt">class</span>="fnseparator" should be commented out.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

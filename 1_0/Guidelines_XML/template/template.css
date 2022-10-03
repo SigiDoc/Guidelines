@@ -1,0 +1,148 @@
+body{
+   color: #000000;
+   background-color: #6F2232;
+   margin: 10pt;
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+div.content {
+       padding: 0.8em 2em;
+    margin: 1em;
+    background-color: #FEFEFE;
+        border-radius: 0.4em;
+    border: 1px solid grey;
+}
+
+h1 {
+color: #FFFFFF;
+margin: 1em;
+}
+
+h5.responsibility {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+ul.resp {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+p.version {
+    font-size: 0.9em;
+    bottom: 0;
+    font-style: italic;
+    margin: 1em;
+    color: #FFFFFF;
+/*    position: fixed;*/
+}
+
+div.pre,pre	{ 
+ background-color: #FFFFCC;  
+ font-family: monospace ;
+ margin: 5px;
+ padding: 6px;
+ white-space: pre;
+}
+
+.egXML_valid {
+    clear:both;
+    border-radius: 0.4em;
+    box-shadow: 0.2em 0.2em 0.1em #888888;
+    border: 1px solid grey;
+    margin: 1.2em 0px !important;
+    overflow: auto;
+}
+
+span.element {
+    font-weight: bold;
+    color: black;
+}
+
+span.attribute {
+    font-weight: bold;
+    color: blue;
+}
+
+span.attributevalue {
+    font-weight: normal;
+    color: black;
+}
+
+/* tooltips */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width:auto;
+  background-color: #fbfbfb;
+  color: #000000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:0.9em;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom:100%;
+  left:50%;
+  margin-left:-60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+span.tag, span.teiAtt, span.teiGi {
+  border: 0.5px solid silver;
+    border-radius: 0.4em;
+/*    box-shadow: 0.2em 0.2em 0.1em #888888; */
+    font-family: monospace;
+    background-color: #FFD;  
+    padding: 2px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}/* ???????????????????span.tag??????????????????????????????????????? */
+
+span.teiGi:before {
+    content: "<";
+}
+
+span.teiGi:after {
+    content: ">";
+}
+
+span.teiAtt:before {
+    content: "@"
+}
+
+/* the following for the homepage logo */
+
+figure.logo1 {
+float:right;
+text-align:center;
+font-size:0.8em;
+}
+
+/* the following highlights the destination of the links from the webpage to the template */
+
+span:target {
+  border: 2px solid red;
+  border-radius: 0.4em;
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="indexing-tokenlemma">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tokenisation and Lemmatisation</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="index">
+                <p>
+                    <specList>
+                        <specDesc key="w"/>
+                    </specList>
+                </p>
+            </div>
+            <div type="explanation">
+                <p>Explicit markup of words (tokenisation) and identification of their dictionary headwords (lemmatisation) are both optional.
+                    To explicitly mark-up lexical words, each word in the text should be enclosed in a <gi>w</gi> element:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <w lemma="ἵστημι" lemmaRef="http://www.perseus.tufts.edu/hopper/morph?l= ἕστηκα&amp;la=greek">ἕστηκα</w>
+                </egXML>
+                <p>in <att>lemma</att> the uninflected form</p>
+                <p>in <att>lemmaRef</att> a URI pointing to the entry for the word in question in a database or online dictionary, such as</p>
+                <p><ref target="http://www.perseus.tufts.edu/hopper/morph?lang=greek">Perseus Greek</ref></p>
+                <p><ref target="http://www.perseus.tufts.edu/hopper/morph?lang=latin">Perseus Latin</ref></p>
+                <p>Tokenisation and lemmatisation are mostly for words to be indexed not included in the other categories.</p>
+                <p>Note that the URI as showed by the browser needs to be slighly modified, because the ampersand ‘&amp;’ can not be part of <att>lemmaRef</att>’s value as it is:
+                    the mention ‘amp;’ should be added just after the &amp;.</p>
+                <p>For a more complete presentation, see the EpiDoc guidelines: <ref target="https://epidoc.stoa.org/gl/latest/idx-wordslemmata.html">Words And Lemmatization</ref>.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

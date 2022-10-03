@@ -1,0 +1,58 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Symbols (cross, leaf, scroll, fleurette, etc.)</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>+, ((cross)), ((+))</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>Not meaning-bearing symbols, i.e. not to be expanded.</p>
+         
+         <p>These symbols should be simply added by typing those supposed to appear in the editorial
+            interpretation; for the diplomatic edition, Atherna Ruby should be used.
+            Alternatively, the symbols can be tagged as follows in the editorial interpretation:
+            
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;g</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"#cross"</span><span class="xmlTag">/&gt;</span> = ((cross))
+                </pre>
+         <p>or, if a <span class="teiGi">charDecl</span> is added to <span class="teiGi">encodingDesc</span>:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;charDecl</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;glyph</span><span class="xmlAttName"> xml:id=</span><span class="xmlAttVal">"cross"</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;charProp</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;localName</span><span class="xmlTag">&gt;</span>glyph-display<span class="xmlTag">&lt;/localName&gt;</span>
+                                <span class="xmlTag">&lt;value</span><span class="xmlTag">&gt;</span>+<span class="xmlTag">&lt;/value&gt;</span>
+                            <span class="xmlTag">&lt;/charProp&gt;</span>
+                        <span class="xmlTag">&lt;/glyph&gt;</span>
+                    <span class="xmlTag">&lt;/charDecl&gt;</span> = ((+))
+                </pre>
+         
+         </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

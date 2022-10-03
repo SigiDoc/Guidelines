@@ -1,0 +1,52 @@
+body{
+   color: #000000;
+   background-color: #6F2232;
+   margin: 10pt;
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+section.all {
+       padding: 0.8em 2em;
+    margin: 1em;
+    background-color: #FEFEFE;
+        border-radius: 0.4em;
+    border: 1px solid grey;
+}
+
+h1 {
+color: #FFFFFF;
+margin: 1em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+ul.resp {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+ul.line {
+    line-height: 0.5em;
+}
+
+span.version {
+    font-size: 0.9em;
+    bottom: 0;
+    font-style: italic;
+    /*margin: 1em;*/
+    color: #FFFFFF;
+/*    position: fixed;*/
+}/* 'SigiDoc version' too much on the left!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* the following for the homepage logo */
+
+img {
+float:right;
+text-align:center;
+font-size:0.8em;
+}

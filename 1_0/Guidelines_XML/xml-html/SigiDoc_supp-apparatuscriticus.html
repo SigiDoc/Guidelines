@@ -1,0 +1,183 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">External apparatus criticus</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         <section class="code">
+            <pre class="teiCode">
+    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"apparatus"</span><span class="xmlTag">/&gt;</span>
+</pre>
+            </section>
+         
+         <h3>Explanation</h3>
+         
+         <p>The following tags should be used – in full or in part – in the external apparatus
+            criticus.
+         </p>
+         
+         <p><span class="teiGi">listApp</span>: contains a list of apparatus entries:
+         </p>
+         
+         <p><span class="teiGi">app</span> with an attribute <span class="teiAtt">loc</span>: contains one entry in a critical apparatus (i.e. one <span class="teiGi">app</span> per entry); <span class="teiAtt">loc</span> indicates the line the <span class="teiGi">app</span>'s content refers to
+            (its value should be 1 or 2 or 3 ...; or 1-2, 2-5, etc.);
+         </p>
+         
+         <p><span class="teiGi">lem</span>: when the <span class="teiGi">app</span>'s content concerns a particular word or phrase, the latter should be written inside
+            <span class="teiGi">lem</span>;
+            if a textual variation is proposed, here should be written the reading appearing in
+            the edition:
+         </p>
+         
+         <p>• and supposed to be changed, if the correction/variant/... is proposed in the apparatus
+            with <span class="teiGi">rdg</span>;
+         </p>
+         
+         <p>• or, if the reading has been already changed in the edition, <span class="teiGi">rdg</span> will contain the deprecated reading;
+         </p>
+         
+         <p><span class="teiGi">rdg</span>: contains a single reading (in case of a textual variation, here should be written
+            the variant reading, proposed or deprecated); 
+            alternatively, it could contain a <span class="teiGi">note</span> for a more detailed explanation, in which a <span class="teiGi">bibl</span> could be added for a short bibliographical reference;
+         </p>
+         
+         <p><span class="teiGi">note</span>: could be an alternative to <span class="teiGi">rdg</span> after <span class="teiGi">lem</span> or also to both <span class="teiGi">lem</span> and <span class="teiGi">rdg</span> (that is, to be nested just after <span class="teiGi">app</span>).
+         </p>
+         
+         <p>The apparatus may contain <span class="teiGi">bibl</span> (for bibliographic references).
+         </p>
+         
+         <p>A FEW EXAMPLES</p>
+         
+         <p>► Correction in the apparatus</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"edition"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;ab</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>Ἄστυ
+                        <span class="xmlTag">&lt;/ab&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                    [...]
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"apparatus"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;listApp</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;app</span><span class="xmlAttName"> loc=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;lem</span><span class="xmlTag">&gt;</span>Ἄστυ<span class="xmlTag">&lt;/lem&gt;</span><span class="xmlTag">&lt;rdg</span><span class="xmlTag">&gt;</span>Σθέν(ος)<span class="xmlTag">&lt;/rdg&gt;</span><span class="xmlTag">&lt;/app&gt;</span>
+                        <span class="xmlTag">&lt;/listApp&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                </pre>
+         <p>Visualisation in the apparatus:</p>
+         
+         <p>1: Ἄστυ : Σθέν(ος) [where Ἄστυ is the edition's version and Σθέν(ος) the proposed
+            variant reading]
+         </p>
+         
+         <p>► Correction with short bibliographical reference bearing a different reading:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;listApp</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;app</span><span class="xmlAttName"> loc=</span><span class="xmlAttVal">"4-5"</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;lem</span><span class="xmlTag">&gt;</span>τ]οὺς λ[ό]γους<span class="xmlTag">&lt;/lem&gt;</span>
+                            <span class="xmlTag">&lt;rdg</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;note</span><span class="xmlTag">&gt;</span>in <span class="xmlTag">&lt;bibl</span><span class="xmlTag">&gt;</span>[tags for the bibliography]2.22<span class="xmlTag">&lt;/bibl&gt;</span> wrong reading τὰς κρίσεις, to be corrected<span class="xmlTag">&lt;/note&gt;</span>
+                            <span class="xmlTag">&lt;/rdg&gt;</span>
+                        <span class="xmlTag">&lt;/app&gt;</span>
+                    <span class="xmlTag">&lt;/listApp&gt;</span>
+                </pre>
+         <p>Visualisation in the apparatus:</p>
+         
+         <p>4-5: τ]οὺς λ[ό]γους : in DOseals 3.2.22 wrong reading τὰς κρίσεις, to be corrected</p>
+         
+         <p>This system allows to point to several words within the same line.</p>
+         
+         <p>The <span class="teiAtt">cert</span>="low" as an <span class="teiGi">rdg</span> attribute is not displayed after transformation: a question mark (?) should be added
+            manually.
+         </p>
+         
+         <p>► Correction in the edition, commented in the apparatus</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;choice</span><span class="xmlAttName"> xml:id=</span><span class="xmlAttVal">"choice3"</span><span class="xmlTag">&gt;</span> (in the edition)
+                        <span class="xmlTag">&lt;corr</span><span class="xmlTag">&gt;</span>σύμπαντα<span class="xmlTag">&lt;/corr&gt;</span>
+                        <span class="xmlTag">&lt;sic</span><span class="xmlTag">&gt;</span>σινπαταν<span class="xmlTag">&lt;/sic&gt;</span>
+                    <span class="xmlTag">&lt;/choice&gt;</span>
+                    [...]
+                    <span class="xmlTag">&lt;app</span><span class="xmlAttName"> loc=</span><span class="xmlAttVal">"12"</span><span class="xmlAttName"> from=</span><span class="xmlAttVal">"#choice3"</span><span class="xmlTag">&gt;</span> (in the apparatus)
+                        <span class="xmlTag">&lt;note</span><span class="xmlTag">&gt;</span>So Mommsen, without comment.<span class="xmlTag">&lt;/note&gt;</span>
+                    <span class="xmlTag">&lt;/app&gt;</span>
+                </pre>
+         <p>► To be more specific: pointing to a specific word or letter in the line. This solution
+            does not require any specific tag in the edition:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"edition"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;ab</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>Κύριε βοήθει τῷ σῷ δούλῳ
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> quantity=</span><span class="xmlAttVal">"1"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"line"</span><span class="xmlTag">/&gt;</span>
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"3"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> extent=</span><span class="xmlAttVal">"unknown"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"character"</span><span class="xmlTag">/&gt;</span>λ
+                            [...]
+                        <span class="xmlTag">&lt;/ab&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                            <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"apparatus"</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;listApp</span><span class="xmlTag">&gt;</span>
+                                    <span class="xmlTag">&lt;app</span><span class="xmlAttName"> loc=</span><span class="xmlAttVal">"3"</span><span class="xmlTag">&gt;</span>
+                                        <span class="xmlTag">&lt;lem</span><span class="xmlTag">&gt;</span>λ<span class="xmlTag">&lt;/lem&gt;</span>
+                                        <span class="xmlTag">&lt;rdg</span><span class="xmlTag">&gt;</span>Μανουήλ, Μιχαήλ<span class="xmlTag">&lt;/rdg&gt;</span>
+                                    <span class="xmlTag">&lt;/app&gt;</span>
+                                <span class="xmlTag">&lt;/listApp&gt;</span>
+                            <span class="xmlTag">&lt;/div&gt;</span>
+                </pre>
+         <p>Visualisation: 3: λ : Μανουήλ, Μιχαήλ</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"edition"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;ab</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>Κύριε βοήθει τῷ σῷ δούλῳ
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> quantity=</span><span class="xmlAttVal">"1"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"line"</span><span class="xmlTag">/&gt;</span>
+                            <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"3"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> extent=</span><span class="xmlAttVal">"unknown"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"character"</span><span class="xmlTag">/&gt;</span>λ
+                            
+                        <span class="xmlTag">&lt;/ab&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                            <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"apparatus"</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;listApp</span><span class="xmlTag">&gt;</span>
+                                    <span class="xmlTag">&lt;app</span><span class="xmlAttName"> loc=</span><span class="xmlAttVal">"3"</span><span class="xmlTag">&gt;</span>
+                                        <span class="xmlTag">&lt;lem</span><span class="xmlTag">&gt;</span>λ<span class="xmlTag">&lt;/lem&gt;</span>
+                                        <span class="xmlTag">&lt;note</span><span class="xmlTag">&gt;</span>The first legible letter of the reverse is definitely λ (not an α, as read by Zacos-Veglery) and it is not followed by an abbreviation mark.<span class="xmlTag">&lt;/note&gt;</span>
+                                    <span class="xmlTag">&lt;/app&gt;</span>
+                                <span class="xmlTag">&lt;/listApp&gt;</span>
+                            <span class="xmlTag">&lt;/div&gt;</span>   
+                </pre>
+         <p>Visualisation: 3: λ The first legible letter of the reverse is definitely λ (not an
+            α, as read by Zacos-Veglery) and it is not followed by an abbreviation mark.
+         </p>
+         
+         <p>Nesting <span class="teiGi">note</span> inside <span class="teiGi">rdg</span> will add a colon (:) between lambda and the commentary at the beginning of the line
+            (3: λ :).
+         </p>
+         
+         <p>If no apparatus was needed, it should be explicitly mentioned in order to get a proper
+            viualisation (<span class="teiGi">hi</span> <span class="teiAtt">rend</span>="italic" could be added):
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;app</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;note</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"en"</span><span class="xmlTag">&gt;</span>None.<span class="xmlTag">&lt;/note&gt;</span>
+                        <span class="xmlTag">&lt;note</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"fr"</span><span class="xmlTag">&gt;</span>Aucun.<span class="xmlTag">&lt;/note&gt;</span>
+                    <span class="xmlTag">&lt;/app&gt;</span>
+                </pre>
+         
+         </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

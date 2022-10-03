@@ -1,0 +1,90 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Miscellaneous</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         
+         <p>
+            
+            <h3>Elements</h3>
+            <ul class="speclit">
+               <li>&lt;rs/&gt;</li>
+            </ul>
+            
+         </p>
+         
+         
+         <h3>Explanation</h3>
+         
+         <p>Important: <span class="teiGi">rs</span> should be specified by a <span class="teiAtt">type</span> attribute, whose value(s) listed here are the only being currently handled by SigiDoc/EFES
+            autority lists and they should be used as they appear here.
+         </p>
+         
+         <p>Intended for religious, political, military, economical, etc. terminology / Remarkable
+            expressions.
+         </p>
+         
+         <p>Marian terms:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"marianTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"appellative"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"marianTerms.xml#Δέσποινα"</span><span class="xmlTag">&gt;</span>Δέσποινα<span class="xmlTag">&lt;/rs&gt;</span> (other ex.: Theotoke in the invocation, or vocative in the legend; different from label)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"marianTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"label"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"marianTerms.xml#..."</span><span class="xmlTag">/&gt;</span> (i.e. the name of the Virgin’s type inscribed on the seal [in the field], different from appellative)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"marianTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"sigla"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"marianTerms.xml#..."</span><span class="xmlTag">/&gt;</span> (ex.: ΜP ΘV)
+                </pre>
+         <p>Christ-related terms:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"christTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"appellative"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"christTerms.xml#..."</span><span class="xmlTag">/&gt;</span>
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"christTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"label"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"christTerms.xml#..."</span><span class="xmlTag">/&gt;</span>
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"christTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"sigla"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"christTerms.xml#..."</span><span class="xmlTag">/&gt;</span>
+                </pre>
+         <p>Saints-related terms:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"saintsTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"appellative"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"saintsTerms.xml#..."</span><span class="xmlTag">/&gt;</span> (Archistrategos for Michael, martyr, ...)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"saintsTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"label"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"saintsTerms.xml#..."</span><span class="xmlTag">/&gt;</span> (i.e. the name of the saint’s type inscribed on the seal [in the field], different from saint's name; the adjective hagios should be included in the tag)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"saintsTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"sigla"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"saintsTerms.xml#..."</span><span class="xmlTag">/&gt;</span> (ex.: Μ Χ)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"saintsTerm"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"name"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"saintsTerms.xml#..."</span><span class="xmlTag">/&gt;</span> (for ex., in an invocation in the legend; different from saint's label)
+                </pre>
+         <p>Important: the attribute <span class="teiAtt">subtype</span> is paramount in order to show in the Indices the difference among the various types
+            of terms.
+         </p>
+         
+         <p>With the <span class="teiAtt">subtype</span> 'appellative' should also be tagged the adressees of the invocations, the full text
+            of which are however contained in a separate index (see "<a href="SigiDoc_indexing-invocation.html" target="_blank">Invocations</a>").
+         </p>
+         
+         <p>Other examples:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"ecclesiastical"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">""</span><span class="xmlTag">&gt;</span>ποιμήν<span class="xmlTag">&lt;/rs&gt;</span>
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"devotional"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">""</span><span class="xmlTag">&gt;</span>δοῦλος τῆς Θεοτόκου<span class="xmlTag">&lt;/rs&gt;</span> (connected to the seal's owner)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"divinity"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">""</span><span class="xmlTag">&gt;</span>Κύριε<span class="xmlTag">&lt;/rs&gt;</span> (Trinity, different names for Christ, Theos, Cross)
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"genealogical"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">""</span><span class="xmlTag">/&gt;</span> (only for explicit genealogical references)
+                </pre>
+         <p>And so on... The choice of what kind of miscellaneous terms to index is a project’s
+            decision.
+         </p>
+         
+         <p>The spelling should be normalised in the authority list.</p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

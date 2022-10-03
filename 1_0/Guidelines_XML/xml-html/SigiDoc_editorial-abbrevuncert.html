@@ -1,0 +1,51 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Uncertain expansion of abbreviation</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>1) α(βγ(?)), 2) α(βγ)(?)</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    1) <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>α<span class="xmlTag">&lt;/abbr&gt;</span>
+                        <span class="xmlTag">&lt;ex</span><span class="xmlAttName"> cert=</span><span class="xmlAttVal">"low"</span><span class="xmlTag">&gt;</span>βγ<span class="xmlTag">&lt;/ex&gt;</span>
+                    <span class="xmlTag">&lt;/expan&gt;</span>
+                    
+                    2) <span class="xmlTag">&lt;expan</span><span class="xmlAttName"> cert=</span><span class="xmlAttVal">"low"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>α<span class="xmlTag">&lt;/abbr&gt;</span>
+                        <span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>βγ<span class="xmlTag">&lt;/ex&gt;</span>
+                    <span class="xmlTag">&lt;/expan&gt;</span>
+                </pre>
+         <p>The question mark (?) should be exactly linked to the expanded part, inside the brackets:
+            in this case the <span class="teiAtt">cert</span> attribute goes with <span class="teiGi">ex</span>;
+            if the question mark (?) is outside the brackets, it concerns the whole word and <span class="teiAtt">cert</span> should go with <span class="teiGi">expan</span>.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

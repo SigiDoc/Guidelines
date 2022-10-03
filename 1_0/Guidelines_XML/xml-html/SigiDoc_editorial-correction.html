@@ -1,0 +1,60 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Letters corrected by editor</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b><sup>⌈</sup>αβ<sup>⌉</sup></b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;choice</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;sic</span><span class="xmlTag">&gt;</span>γδ<span class="xmlTag">&lt;/sic&gt;</span>         
+                        <span class="xmlTag">&lt;corr</span><span class="xmlTag">&gt;</span>αβ<span class="xmlTag">&lt;/corr&gt;</span>
+                    <span class="xmlTag">&lt;/choice&gt;</span>
+                </pre>
+         <p><span class="teiGi">sic</span> is for the part to be corrected and <span class="teiGi">corr</span> for the proposed correction.
+         </p>
+         
+         <p>Note: if the proposed correction concerns only a part of a word, <span class="teiGi">choice</span> should include only the part to be corrected:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;choice</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;sic</span><span class="xmlTag">&gt;</span>αβ<span class="xmlTag">&lt;/sic&gt;</span>
+                        <span class="xmlTag">&lt;corr</span><span class="xmlTag">&gt;</span>δε<span class="xmlTag">&lt;/corr&gt;</span>
+                    <span class="xmlTag">&lt;/choice&gt;</span>γ = ⌈δε⌉γ
+                </pre>
+         <p>Possible to add a <span class="teiAtt">resp</span> attribute to <span class="teiGi">corr</span> in order to mention the author of the correction, but the latter will be also discussed
+            in the apparatus.
+         </p>
+         
+         <p>Alternative: leaving the original version in the edition and adding the correction
+            in the external apparatus criticus (<a href="SigiDoc_supp-apparatuscriticus.html" target="_blank">see</a>).
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

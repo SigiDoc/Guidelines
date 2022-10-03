@@ -1,0 +1,52 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Alternative readings</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b><i>vel</i></b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;app</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"alternative"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;lem</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>χ<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>α<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>ρτελ<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>αρίῳ<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span><span class="xmlTag">&lt;/lem&gt;</span>
+                        <span class="xmlTag">&lt;rdg</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>χρυσο<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>τελ<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>ῇ<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span><span class="xmlTag">&lt;/rdg&gt;</span>
+                    <span class="xmlTag">&lt;/app&gt;</span>
+                </pre>
+         <p>Visualisation after transformation: χ(α)ρτελ(αρίῳ) vel (χρυσο)τελ(ῇ).</p>
+         
+         <p>The <span class="teiGi">app</span> element should have a <span class="teiAtt">type</span> attribute of "alternative".
+         </p>
+         
+         <p>The alternatives could be discussed in full detail in the apparatus.</p>
+         
+         <p>Another way to mention an alternative reading is as an entry in a separate, external,
+            apparatus criticus (<a href="SigiDoc_supp-apparatuscriticus.html" target="_blank">see</a>).
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

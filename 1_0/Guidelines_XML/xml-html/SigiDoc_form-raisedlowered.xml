@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="form-raisedlowered">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Raised or lowered characters</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote>(none)</quote>
+                </cit>
+                <cit type="diplomatic"><!-- bad visualisation of lines!!!! -->
+                    <quote>none</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <p>Characters written higher than the surrounding text:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <hi rend="superscript">γ</hi> = αβᵞ
+                </egXML>
+                <p>Characters written lower than the surrounding text:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <hi rend="subscript">γ</hi> = αβᵧ
+                </egXML>
+                <p>Character written directly above another character (as opposed to superscript):</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <hi rend="stacked">c</hi>
+                </egXML>
+                <p> but it is not currently handled by stylesheets.</p>
+                <p>If it is for an abbreviation or something supposed to be ‘regularised’ in the edition, those characters should appear above or below line only in the diplomatic edition,
+                    especially using Athena Ruby; but sometimes they are simply written like this, and should be represented in the editorial interpretation too.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

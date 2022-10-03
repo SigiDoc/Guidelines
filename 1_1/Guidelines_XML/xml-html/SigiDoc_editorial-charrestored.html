@@ -1,0 +1,83 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Characters lost but restored</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>[αβ]</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>αβ<span class="xmlTag">&lt;/supplied&gt;</span> 
+                </pre>
+         <p>Different cases:</p>
+         
+         <p>1) <span class="teiGi">gap</span>+<span class="teiGi">supplied</span> - If inside the restoration there is also a lacuna, <span class="teiGi">gap</span> preceeds or follows <span class="teiGi">supplied</span>: 
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> quantity=</span><span class="xmlAttVal">"2"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"character"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>abg<span class="xmlTag">&lt;/supplied&gt;</span> = [..abg]
+                    
+                    <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>abg<span class="xmlTag">&lt;/supplied&gt;</span><span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> quantity=</span><span class="xmlAttVal">"2"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"character"</span><span class="xmlTag">/&gt;</span> = [abg..]
+                    
+                    <span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"character"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>abg<span class="xmlTag">&lt;/supplied&gt;</span> = [.. ? ..abg]
+                </pre>
+         <p>Note: adding <span class="teiAtt">quantity</span>, <span class="teiAtt">extent</span> and <span class="teiAtt">unit</span> to <span class="teiGi">gap</span>, or changing the <span class="teiAtt">reason</span>'s value in 'illegible'
+            will change the transformation according to the visualisation designed for those attributes/values.
+         </p>
+         
+         <p>2) <span class="teiGi">expan</span>+<span class="teiGi">supplied</span> - If the supplied text includes an expansion of abbreviation, <span class="teiGi">expan</span> is nested inside <span class="teiGi">supplied</span>:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>a<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>bg<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span>
+                    <span class="xmlTag">&lt;/supplied&gt;</span> = [a(bg)]
+                </pre>
+         <p>Otherwise, if an expansion of abbreviation includes a supplied text, <span class="teiGi">supplied</span> is nested inside <span class="teiGi">expan</span>:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>Au<span class="xmlTag">&lt;/abbr&gt;</span>
+                        <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>g<span class="xmlTag">&lt;/abbr&gt;</span>
+                            <span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>usti<span class="xmlTag">&lt;/ex&gt;</span>
+                        <span class="xmlTag">&lt;/supplied&gt;</span>
+                    <span class="xmlTag">&lt;/expan&gt;</span>
+                    <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>Lici<span class="xmlTag">&lt;/supplied&gt;</span>nia = Au[g(usti) Lici]nia
+                </pre>
+         <p>3) <span class="teiGi">supplied</span>+<span class="teiGi">supplied</span> - Adjacent lacunae, i.e. two or more words in the same restoration: <span class="teiGi">supplied</span> should be repeated for each word or part;
+            note that the stylesheet will join together more consecutive restorations:
+         </p>
+         <pre class="teiCode">
+                    Καῖσ<span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>αρ<span class="xmlTag">&lt;/supplied&gt;</span>
+                    <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>Σεβαστὸς<span class="xmlTag">&lt;/supplied&gt;</span> = Καῖσ[αρ Σεβαστὸς]
+                </pre>
+         <p>Note: a white space between these 2 elements should be added in order to separate
+            the two parts inside the square brackets.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

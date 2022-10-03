@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in the <div> containing <h5 class="responsibility"><ul class="resp"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+
+         End license statement: do not remove -->
+
+<!-- last modified: 2022-10-02 -->
+
+<!-- ids to anchor this page to the template.xml: a1, a2, a3, ... -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="../output/SigiDoc_controlled-vocabulary.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>SigiDocʼs attributes</title>
+  </head>
+  <body>
+    <div>
+      <p>
+        <figure class="logo1">
+          <a
+            href="../../General_presentation/outline_home_white_24dp.png"
+            target="_blank"><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img
+                src="../../General_presentation/outline_home_white_24dp.png"
+                alt="" /></a
+          ></a>
+        </figure>
+      </p>
+    </div>
+    <h1>SigiDocʼs attributesʼ values</h1>
+    <div class="content">
+      <p>
+        This page groups together all the values required in order to properly
+        use the
+        <a href="../template/template.html" target="_blank">SigiDoc template</a>
+        and some of its attributes. The following tables are organised in
+        alphabetical order according to the templateʼs attributes, repeated when
+        they are part of different elements: the first table contains the
+        predefined values among which the encoder should choose according to
+        their specific needs; the second table, in contrast, contains the fixes
+        values as they appear on the
+        <a href="../template/template.html" target="_blank">SigiDoc template</a>
+        and in the
+        <a
+          href="https://sourceforge.net/p/sigidoc/code/HEAD/tree/trunk/schema/"
+          target="_blank"
+          >SigiDoc schema</a
+        >: these values should not be changed, as they are part of the
+        transformation process of the SigiDoc XML files.
+      </p>
+
+      <!-- ************ FIRST TABLE ************* -->
+
+      <h3>Values to be selected</h3>
+      <table id="full-list">
+        <thead>
+          <tr>
+            <th>Attributeʼs name</th>
+            <th>in element</th>
+            <th>Values</th>
+            <th class="separator">Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="a6">
+            <td><span class="attribute">@cert</span></td>
+            <td>(various elements)</td>
+
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>high</td>
+                  </tr>
+                  <tr>
+                    <td>medium</td>
+                  </tr>
+                  <tr>
+                    <td>low</td>
+                  </tr>
+                  <tr>
+                    <td>unknown</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@corresp</span></td>
+            <td>
+              <span class="element"
+                >&lt;idno <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >PBW</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(a URI)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@datingMethod</span></td>
+            <td><span class="element">&lt;origDate&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(dating system)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a5">
+            <td><span class="attribute">@evidence</span></td>
+            <td>
+              <span class="element">&lt;origDate&gt;</span>
+              <br />
+              <span class="element">&lt;corr&gt;</span>
+            </td>
+
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>lettering</td>
+                  </tr>
+                  <tr>
+                    <td>nomenclature</td>
+                  </tr>
+                  <tr>
+                    <td>prosopography</td>
+                  </tr>
+                  <tr>
+                    <td>reign</td>
+                  </tr>
+                  <tr>
+                    <td>titulature</td>
+                  </tr>
+                  <tr>
+                    <td>internal_date</td>
+                  </tr>
+                  <tr>
+                    <td>historical_context</td>
+                  </tr>
+                  <tr>
+                    <td>archaeological_context</td>
+                  </tr>
+                  <tr>
+                    <td>epigraphical_context</td>
+                  </tr>
+                  <tr>
+                    <td>terminology</td>
+                  </tr>
+                  <tr>
+                    <td>iconography</td>
+                  </tr>
+                  <tr>
+                    <td>parallel</td>
+                  </tr>
+                  <tr>
+                    <td>overstrike</td>
+                  </tr>
+                  <tr>
+                    <td>understrike</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+
+            <td class="separator">
+              values not displayed after transformation; this information is
+              given by the element <span class="element">&lt;interp</span>
+              <span class="attribute">type</span>="<span class="attributevalue"
+                >datingCriteria</span
+              >"&gt;
+            </td>
+          </tr>
+
+          <tr class="firstline" id="a1">
+            <td>
+              <span class="attribute">@mainLang</span> /
+              <span class="attribute">@otherLang</span>
+            </td>
+            <td><span class="element">&lt;textLang&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>grc = Ancient Greek language (to 1453)</td>
+                  </tr>
+                  <tr>
+                    <td>la = Latin language</td>
+                  </tr>
+                  <tr>
+                    <td>Grek = Greek script</td>
+                  </tr>
+                  <tr>
+                    <td>Latn = Latin script</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      grc-Latn = Ancient Greek Language (to 1453), rendered in
+                      Latin script
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator">
+              see also <span class="attribute">@xml:lang</span>
+            </td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@notAfter</span></td>
+            <td><span class="element">&lt;origDate&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(YYYY)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@notBefore</span></td>
+            <td><span class="element">&lt;origDate&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(YYYY)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@ref</span></td>
+            <td>(various elements)</td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(a URI or an XML identifier)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a3">
+            <td><span class="attribute">@rend</span></td>
+            <td><span class="element">&lt;condition&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>cut</td>
+                  </tr>
+                  <tr>
+                    <td>clipped</td>
+                  </tr>
+                  <tr>
+                    <td>pierced</td>
+                  </tr>
+                  <tr>
+                    <td>broken</td>
+                  </tr>
+                  <tr>
+                    <td>blankTooSmall</td>
+                  </tr>
+                  <tr>
+                    <td>deformedBlank</td>
+                  </tr>
+                  <tr>
+                    <td>notCentered</td>
+                  </tr>
+                  <tr>
+                    <td>wornEdge</td>
+                  </tr>
+                  <tr>
+                    <td>obliterated</td>
+                  </tr>
+                  <tr>
+                    <td>crushed</td>
+                  </tr>
+                  <tr>
+                    <td>wellPreserved</td>
+                  </tr>
+                  <tr>
+                    <td>blankTooLarge</td>
+                  </tr>
+                  <tr>
+                    <td>corroded</td>
+                  </tr>
+                  <tr>
+                    <td>tornChannel</td>
+                  </tr>
+                  <tr>
+                    <td>chipped</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator">
+              Values not displayed after transformation; useful, if needed, for
+              indexing and searching.<br />ʽObliteratedʼ is intended for an
+              intentional action; ʽcrushedʼ for an unintentional action.
+            </td>
+          </tr>
+
+          <tr class="firstline" id="a15">
+            <td><span class="attribute">@rend</span></td>
+            <td>
+              <span class="element"
+                >&lt;div <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >textpart</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>linear</td>
+                  </tr>
+                  <tr>
+                    <td>circular</td>
+                  </tr>
+                  <tr>
+                    <td>columns</td>
+                  </tr>
+                  <tr>
+                    <td>monogram</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a7">
+            <td><span class="attribute">@resp</span></td>
+            <td>(various elements)</td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      (identifier, usually the capital first letter of forename
+                      and surname)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a10">
+            <td><span class="attribute">@source</span></td>
+            <td>
+              <span class="element"
+                >&lt;provenance <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >found</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>publication (link to be added)</td>
+                  </tr>
+                  <tr>
+                    <td>memories</td>
+                  </tr>
+                  <tr>
+                    <td>oral_communication</td>
+                  </tr>
+                  <tr>
+                    <td>written_communication</td>
+                  </tr>
+                  <tr>
+                    <td>[name of a person]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a9">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;provenance <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >found</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>discovered</td>
+                  </tr>
+                  <tr>
+                    <td>rediscovered</td>
+                  </tr>
+                  <tr>
+                    <td>first-seen</td>
+                  </tr>
+                  <tr>
+                    <td>first-recorded</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a11">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;provenance <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >observed</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>seen</td>
+                  </tr>
+                  <tr>
+                    <td>recorded</td>
+                  </tr>
+                  <tr>
+                    <td>identified</td>
+                  </tr>
+                  <tr>
+                    <td>photographed</td>
+                  </tr>
+                  <tr>
+                    <td>autopsied</td>
+                  </tr>
+                  <tr>
+                    <td>squeeze-taken</td>
+                  </tr>
+                  <tr>
+                    <td>rubbing-taken</td>
+                  </tr>
+                  <tr>
+                    <td>ink-transfer-taken</td>
+                  </tr>
+                  <tr>
+                    <td>reported</td>
+                  </tr>
+                  <tr>
+                    <td>built-into</td>
+                  </tr>
+                  <tr>
+                    <td>reappeared</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a12">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;provenance <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >not-observed</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>lost</td>
+                  </tr>
+                  <tr>
+                    <td>stolen</td>
+                  </tr>
+                  <tr>
+                    <td>destroyed</td>
+                  </tr>
+                  <tr>
+                    <td>drawn</td>
+                  </tr>
+                  <tr>
+                    <td>reported-lost</td>
+                  </tr>
+                  <tr>
+                    <td>reported-stolen</td>
+                  </tr>
+                  <tr>
+                    <td>reported-destroyed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a13">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;provenance <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >transferred</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>moved</td>
+                  </tr>
+                  <tr>
+                    <td>sold</td>
+                  </tr>
+                  <tr>
+                    <td>given</td>
+                  </tr>
+                  <tr>
+                    <td>loaned</td>
+                  </tr>
+                  <tr>
+                    <td>auctioned</td>
+                  </tr>
+                  <tr>
+                    <td>donated</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a4">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;rs <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >matrix</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>surviving</td>
+                  </tr>
+                  <tr>
+                    <td>notSurviving</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator">
+              with the ʽsurvivingʼ value the ID number of the matrix will be
+              followed by an asterisk (*)
+            </td>
+          </tr>
+
+          <tr class="firstline" id="a14">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;div <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >textpart</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>label</td>
+                  </tr>
+                  <tr>
+                    <td>sigla</td>
+                  </tr>
+                  <tr>
+                    <td>face</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a16">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;div <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >bibliography</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>edition (editions of the current item)</td>
+                  </tr>
+                  <tr>
+                    <td>parallels (editions of parallels)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      discussionCurrent (discussion - without publication -
+                      about the current item)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      discussionParallels (discussion - without publication -
+                      about the parallel(s))
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@target</span></td>
+            <td>(various elements)</td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(a URI or an XML identifier)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline" id="a2">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;roleName&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>imperial</td>
+                  </tr>
+                  <tr>
+                    <td>civil</td>
+                  </tr>
+                  <tr>
+                    <td>military</td>
+                  </tr>
+                  <tr>
+                    <td>aristocracy</td>
+                  </tr>
+                  <tr>
+                    <td>secularChurch</td>
+                  </tr>
+                  <tr>
+                    <td>monastic</td>
+                  </tr>
+                  <tr>
+                    <td>civic</td>
+                  </tr>
+                  <tr>
+                    <td>corporate</td>
+                  </tr>
+                  <tr>
+                    <td>private</td>
+                  </tr>
+                  <tr>
+                    <td>undetermined</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator">
+              values not displayed after transformation; this information is
+              given by the element
+              <span class="element"
+                >&lt;interp <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >milieu</span
+                >"&gt;</span
+              ><br />
+              For an explanation, see the
+              <a
+                href="SigiDoc_controlled-vocabularies_elements.html#a4"
+                target="_blank"
+                >Controlled Vocabulary for elements</a
+              >.
+            </td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@unit</span></td>
+            <td><span class="element">&lt;citedRange&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>chapter</td>
+                  </tr>
+                  <tr>
+                    <td>column</td>
+                  </tr>
+                  <tr>
+                    <td>entry</td>
+                  </tr>
+                  <tr>
+                    <td>issue</td>
+                  </tr>
+                  <tr>
+                    <td>line</td>
+                  </tr>
+                  <tr>
+                    <td>page</td>
+                  </tr>
+                  <tr>
+                    <td>part</td>
+                  </tr>
+                  <tr>
+                    <td>volume</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@when</span></td>
+            <td>(various elements)</td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(YYYY-MM-DD) / (YYYY)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@when-custom</span></td>
+            <td><span class="element">&lt;origDate&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>(date in ancient calendar)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@who</span></td>
+            <td><span class="element">&lt;change&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      (identifier, usually the capital first letter of forename
+                      and surname)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@xml:id</span></td>
+            <td><span class="element">&lt;persName&gt;</span></td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      (identifier of the person, usually the capital first
+                      letter of forename and surname)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@xml:lang</span></td>
+            <td>(various elements)</td>
+            <td>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Grek = Greek script</td>
+                  </tr>
+                  <tr>
+                    <td>Latn = Latin script</td>
+                  </tr>
+                  <tr>
+                    <td>grc = Ancient Greek language (to 1453)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      grc-Latn = Ancient Greek Language (to 1453), rendered in
+                      Latin script
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>en = English language</td>
+                  </tr>
+                  <tr>
+                    <td>fr = French language</td>
+                  </tr>
+                  <tr>
+                    <td>it = Italian language</td>
+                  </tr>
+                  <tr>
+                    <td>de = German language</td>
+                  </tr>
+                  <tr>
+                    <td>el = Modern Greek language (1453-)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td class="separator">
+              see also <span class="attribute">@mainLang</span> /
+              <span class="attribute">@otherLang</span><br />
+              code for the appropriate language can be found at
+              <a
+                href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+                target="_blank"
+                >IANA Language Subtag Registry</a
+              ><br />
+              to be used for multilingual projects; in case of a word or content
+              not translatable (e.g. ʽBritish Libraryʼ), the attribute
+              <span class="attribute">@xml:lang</span> should not be used, in
+              order to allow the term to be visualised regardless of the chosen
+              language
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- ************** SECOND TABLE *************** -->
+      <h3>Fixed values (not to be changed)</h3>
+      <table id="full-list2">
+        <thead>
+          <tr class="firstline">
+            <th>Attributeʼs name</th>
+            <th>in element</th>
+            <th>Values</th>
+            <th class="separator width">Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="attribute">@n</span></td>
+            <td><span class="element">&lt;summary&gt;</span></td>
+            <td>
+              whole
+              <br />
+              r
+              <br />
+              v
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@n</span></td>
+            <td><span class="element">&lt;layout&gt;</span></td>
+            <td>
+              whole
+              <br />
+              r
+              <br />
+              v
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@n</span></td>
+            <td><span class="element">&lt;handNote&gt;</span></td>
+            <td>
+              whole
+              <br />
+              r
+              <br />
+              v
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@n</span></td>
+            <td><span class="element">&lt;figDesc&gt;</span></td>
+            <td>
+              whole
+              <br />
+              r
+              <br />
+              v
+              <br />
+              decoR
+              <br />
+              decoV
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@n</span></td>
+            <td><span class="element">&lt;msPart&gt;</span></td>
+            <td>
+              r
+              <br />
+              v
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@n</span></td>
+            <td>
+              <span class="element"
+                >&lt;div <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >textpart</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              obv
+              <br />
+              rev
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@role</span></td>
+            <td><span class="element">&lt;roleName&gt;</span></td>
+            <td>issuer</td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@scale</span></td>
+            <td><span class="element">&lt;graphic&gt;</span></td>
+            <td>(scale of images)</td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@subtype</span></td>
+            <td>
+              <span class="element"
+                >&lt;div <span class="attribute">type</span>="<span
+                  class="attributevalue"
+                  >edition</span
+                >"&gt;</span
+              >
+            </td>
+            <td>
+              editorial
+              <br />
+              diplomatic
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;idno&gt;</span></td>
+            <td>
+              filename
+              <br />
+              SigiDocID
+              <br />
+              sequence
+              <br />
+              SigiDoc
+              <br />
+              (PBW)
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;interp&gt;</span></td>
+            <td>
+              milieu
+              <br />
+              workType
+              <br />
+              datingCriteria
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;dimensions&gt;</span></td>
+            <td>
+              support
+              <br />
+              written
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;dim&gt;</span></td>
+            <td>diameter</td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;measure&gt;</span></td>
+            <td>
+              weight
+              <br />
+              axis
+              <br />
+              overstrikeOrient
+              <br />
+              channelOrient
+              <br />
+              countermark
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;rs&gt;</span></td>
+            <td>
+              layout
+              <br />
+              execution
+              <br />
+              shape
+              <br />
+              matrix
+              <br />
+              circumstances
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;origDate&gt;</span></td>
+            <td>
+              analysis
+              <br />
+              internal
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;provenance&gt;</span></td>
+            <td>
+              found
+              <br />
+              observed
+              <br />
+              not-observed
+              <br />
+              transferred
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;placeName&gt;</span></td>
+            <td>
+              ancientFindspot
+              <br />
+              modernFindspot
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;surface&gt;</span></td>
+            <td>
+              obverse
+              <br />
+              reverse
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@type</span></td>
+            <td><span class="element">&lt;div&gt;</span></td>
+            <td>
+              edition
+              <br />
+              textpart
+              <br />
+              apparatus
+              <br />
+              translation
+              <br />
+              commentary
+              <br />
+              footnotes
+              <br />
+              bibliography
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@unit</span></td>
+            <td><span class="element">&lt;dimensions&gt;</span></td>
+            <td>mm</td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@unit</span></td>
+            <td><span class="element">&lt;measure&gt;</span></td>
+            <td>
+              g
+              <br />
+              clock
+            </td>
+            <td class="separator"></td>
+          </tr>
+
+          <tr class="firstline">
+            <td><span class="attribute">@url</span></td>
+            <td><span class="element">&lt;graphic&gt;</span></td>
+            <td>(link to local or/and remote images)</td>
+            <td class="separator"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h5 class="responsibility">Responsibility for this page</h5>
+      <ul class="resp">
+        <li>Author: Alessio Sopracasa</li>
+        <li>Author: Martina Filosa</li>
+      </ul>
+    </div>
+    <div>
+      <p class="version">SigiDoc version: 1.0</p>
+    </div>
+  </body>
+</html>

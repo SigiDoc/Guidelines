@@ -1,0 +1,56 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Words divided across lines</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>
+                  1 αβγ-
+                  2 δεζ
+                  </b></li>
+            <li>Diplomatic edition: <b>
+                  1 ΑΒΓ
+                  2 ΔΕΖ
+                  (none)
+                  </b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>Note that the attribute <span class="teiAtt">break</span> is in the second line, not in the line where the hyphen (–) will appear after transformation:
+            <pre class="teiCode">
+                        <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>αβγ
+                        <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlAttName"> break=</span><span class="xmlAttVal">"no"</span><span class="xmlTag">/&gt;</span>δεζ
+                    </pre>
+            </p>
+         
+         <p>
+            The hyphen (–) for the line break is not supposed to appear in the diplomatic transcription,
+            consequently the attribute <span class="teiAtt">break</span> is not necessary there.
+            
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

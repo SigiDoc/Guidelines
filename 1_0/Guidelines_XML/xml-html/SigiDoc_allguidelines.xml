@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_all-guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_all-guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="allguidelines">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:id="home">SigiDoc Guidelines: Byzantine Seals in TEI-XML</title>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile><graphic url=""></graphic></facsimile>
+    <text>
+        <body>
+            <div type="content">
+                <div type="intro">
+                <p>SigiDoc is a standard for the enconding of Byzantine seals' editions in TEI-XML, largely based on the experience gained by EpiDoc for inscriptions and papyri. This means that becoming familiar with <ref target="https://epidoc.stoa.org/gl/latest/">EpiDoc Guidelines</ref> is extremely important also when using SigiDoc. These <hi rend="italic">SigiDoc Guidelines</hi> are mainly focused on four major topics: the SigiDoc XML template, the transcription of seals' legends, features such as apparatus criticus, commentary or bibliography, and the indexing of the data.</p>
+                    <p>Consequently, this page groups together the links to all these main sections of the Guidelines:</p>
+            </div>
+            <div type="contentList">
+                <head>List of Guidelines</head>
+                <list>
+                    <item><ref target="../template/template.html">SigiDoc's Template: the Structure of a SigiDoc XML File</ref></item>
+                    <item><ref target="SigiDoc_alltext.html">List of All Trancription Guidelines: Leidenisation</ref></item>
+                    <item><ref target="SigiDoc_allsupp.html">Commentary and Documentary Sections of the Seals' Edition</ref></item>
+                    <item><ref target="SigiDoc_allindex.html">List of All Indexing Guidelines</ref></item>
+                </list>
+            </div>
+            <div type="intro">
+                <p>From these topics the metadata of the seals (such as physical description, history, dating, etc.) are excluded, since they are not (at least for the moment) dealt with in detail in this SigiDoc Guidelines; however, important information can be found in the explanation of the <ref target="../template/template.html">SigiDoc template</ref> and, of course, in the <ref target="https://epidoc.stoa.org/gl/latest/app-allsupp.html">EpiDoc Guidelines</ref>.</p>
+                <p>How to cite these Guidelines:</p>
+                <p>Alessio Sopracasa, Martina Filosa (2021), <hi rend="italic">SigiDoc Guidelines: Byzantine Seals in TEI-XML (version 1)</hi>. Available: <ref target="http://sigidoc.huma-num.fr/">http://sigidoc.huma-num.fr/</ref>.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

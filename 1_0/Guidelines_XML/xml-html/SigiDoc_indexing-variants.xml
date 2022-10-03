@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="indexing-variants">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Letter variants and special characters</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="index">
+                <p>
+                    <specList>
+                        <specDesc key="c"/>
+                    </specList>
+                </p>
+            </div>
+            <div type="explanation">
+                <p>Important: <gi>c</gi> should be specified by a <att>type</att> attribute, whose value(s) listed here are the only being currently handled by SigiDoc/EFES
+                    autority lists and they should be used as they appear here:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <c type="glyph" ana="glyphs.xml#Kappa.1" subtype="">[glyph here]</c>
+                </egXML>
+                <p>Notice that here the attribute pointing to the authority list is <att>ana</att> (and not <att>ref</att>).</p>
+                <p>Designed for the diplomatic edition only and Athena Ruby as Greek font. 
+                    The <att>ana</att> will populate the first column of the glyphs' index with the specific variants, tagged with <gi>c</gi>; the <att>subtype</att>'s value should be:</p>
+                <p>1) in case of single letters, the corresponding standard Greek or Latin (or ...) letter of the referenced glyph;</p>
+                    <p>1bis) in case of superscript Greek letters, the @subtype's value should be "superscript";</p>
+                    <p>2) in case of ligatures, "greekLigatures" or "latinLigatures";</p>
+                    <p>3) in case of decoration elements, "decoration";</p>
+                    <p>4) in case of abbreviation signs, "abbreviation";</p>
+                    <p>5) in case of editorial interventions, "editorial".</p>
+                <p>Not currently available.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

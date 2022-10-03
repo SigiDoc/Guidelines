@@ -1,0 +1,44 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Illegible lines: quantity known</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>- - - - - - - - - -</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"illegible"</span><span class="xmlAttName"> quantity=</span><span class="xmlAttVal">"1"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"line"</span><span class="xmlTag">/&gt;</span>
+                </pre>
+         <p>Vestiges of lines visible but illegible.</p>
+         
+         <p>Note: the <span class="teiAtt">quantity</span>'s value does not affect the visualisation; for this reason, this tag should be repeated
+            for each illegible line, after <span class="teiGi">lb</span>, with a fixed <span class="teiAtt">quantity</span>’s value of “1”.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

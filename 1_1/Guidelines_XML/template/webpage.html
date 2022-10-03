@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in the <div> containing <h5 class="responsibility"><ul class="resp"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<!-- last modified: 2022-10-02 -->
+
+<!-- ids to anchor this page to template.html: t1, t2, t3, ... -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="../output/SigiDoc_controlled-vocabulary.css"/>
+        <style>
+    a { text-decoration: none; }
+  </style>
+        <title>Layout of a SigiDoc edition page</title>
+    </head>
+    <body>
+        <div><p><figure class="logo1"><a href="../../General_presentation/outline_home_white_24dp.png" target="_blank"><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png" alt=""/></a></a></figure></p></div>
+        <h1>Layout of a SigiDoc edition page</h1>
+        <div class="content">
+            <p>This page contains all the fields that form the seal edition as it appears on the web page. This list of field names is generated from the <a href="template.html" target="_blank">SigiDoc template</a> and both are linked to each other in order to make easier the navigation through them: the links show which elements of the template the different fields correspond to (the destination of the links on the other page will be highlighted in order to facilitate the reading).</p>
+            <table id="full-list">
+                <thead>
+                    <tr>
+                        <th>Main categories</th>
+                        <th>Subcategories</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="t1">
+                        <td><a href="template.html#t1" target="_blank"><b>[TITLE]</b></a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="t2">
+                        <td><a href="template.html#t2" target="_blank"><b>SigiDoc ID</b></a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Artifact</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="t3">
+                        <td></td>
+                        <td><a href="template.html#t3" target="_blank">Type</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t4">
+                        <td></td>
+                        <td><a href="template.html#t4" target="_blank">General layout</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t5">
+                        <td></td>
+                        <td><a href="template.html#t5" target="_blank">Matrix</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><i>Physical description</i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t6">
+                        <td></td>
+                        <td><a href="template.html#t6" target="_blank">Medium</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t7">
+                        <td></td>
+                        <td><a href="template.html#t7" target="_blank">Material</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t16">
+                        <td></td>
+                        <td><a href="template.html#t16" target="_blank">Shape</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t8">
+                        <td></td>
+                        <td><a href="template.html#t8" target="_blank">Dimensions (mm)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t9">
+                        <td></td>
+                        <td><a href="template.html#t9" target="_blank">Weight (g)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t10">
+                        <td></td>
+                        <td><a href="template.html#t10" target="_blank">Axis (clock)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t11">
+                        <td></td>
+                        <td><a href="template.html#t11" target="_blank">Overstrike orientation (clock)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t12">
+                        <td></td>
+                        <td><a href="template.html#t12" target="_blank">Channel orientation (clock)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t13">
+                        <td></td>
+                        <td><a href="template.html#t13" target="_blank">Execution</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t14">
+                        <td></td>
+                        <td><a href="template.html#t14" target="_blank">Countermark</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t15">
+                        <td></td>
+                        <td><a href="template.html#t15" target="_blank">Lettering</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t17">
+                        <td></td>
+                        <td><a href="template.html#t17" target="_blank">Condition</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><i>Dating</i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t18">
+                        <td></td>
+                        <td><a href="template.html#t18" target="_blank">Date</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t19">
+                        <td></td>
+                        <td><a href="template.html#t19" target="_blank">Internal date</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t20">
+                        <td></td>
+                        <td><a href="template.html#t20" target="_blank">Dating criteria</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t21">
+                        <td></td>
+                        <td><a href="template.html#t21" target="_blank">Alternative dating</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><i>History</i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t22">
+                        <td></td>
+                        <td><a href="template.html#t22" target="_blank">Seal's category</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t23">
+                        <td></td>
+                        <td><a href="template.html#t23" target="_blank">Issuer</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t24">
+                        <td></td>
+                        <td><a href="template.html#t24" target="_blank">Issuer's milieu</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t25">
+                        <td></td>
+                        <td><a href="template.html#t25" target="_blank">Place of origin</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t26">
+                        <td></td>
+                        <td>Find place (<a href="template.html#t26" target="_blank">ancient findspot</a> / <a href="template.html#t27" target="_blank">modern findspot</a>)</td>
+                        <td></td>
+                    </tr>
+                    <tr id="t27">
+                        <td></td>
+                        <td><a href="template.html#t28" target="_blank">Find date</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t28">
+                        <td></td>
+                        <td><a href="template.html#t29" target="_blank">Find circumstances</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t29">
+                        <td></td>
+                        <td>Modern location (<a href="template.html#t31" target="_blank">city</a> / <a href="template.html#t30" target="_blank">country</a>)</td>
+                        <td></td>
+                    </tr>
+                    <tr id="t30">
+                        <td></td>
+                        <td><a href="template.html#t32" target="_blank">Institution</a> and <a href="template.html#t33" target="_blank">repository</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t31">
+                        <td></td>
+                        <td><a href="template.html#t34" target="_blank">Collection</a> and <a href="template.html#t35" target="_blank">inventory</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t32">
+                        <td></td>
+                        <td><a href="template.html#t36" target="_blank">Acquisition</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t33">
+                        <td></td>
+                        <td><a href="template.html#t37" target="_blank">Previous locations</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t34">
+                        <td></td>
+                        <td>Modern observations (<a href="template.html#t38" target="_blank">successful</a> / <a href="template.html#t39" target="_blank">unsuccessful</a>)</td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Inscribed field - Obverse</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t35">
+                        <td></td>
+                        <td><a href="template.html#t40" target="_blank">Layout of field</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t36">
+                        <td></td>
+                        <td><a href="template.html#t41" target="_blank">Field's dimensions (mm)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t37">
+                        <td></td>
+                        <td><a href="template.html#t42" target="_blank">Matrix</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t38">
+                        <td></td>
+                        <td><a href="template.html#t43" target="_blank">Iconography</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td id="t39"></td>
+                        <td><a href="template.html#t44" target="_blank">Decoration</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t40">
+                        <td></td>
+                        <td><a href="template.html#t45" target="_blank">Lettering</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t41">
+                        <td></td>
+                        <td><a href="template.html#t46" target="_blank">Date</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t42">
+                        <td></td>
+                        <td><a href="template.html#t46" target="_blank">Internal date</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t43">
+                        <td></td>
+                        <td><a href="template.html#t46" target="_blank">Dating criteria</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t44">
+                        <td></td>
+                        <td><a href="template.html#t46" target="_blank">Alternative dating</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Inscribed field - Reverse</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t45">
+                        <td></td>
+                        <td><a href="template.html#t47" target="_blank">Layout of field</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t46">
+                        <td></td>
+                        <td><a href="template.html#t48" target="_blank">Field's dimensions (mm)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t47">
+                        <td></td>
+                        <td><a href="template.html#t49" target="_blank">Matrix</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t48">
+                        <td></td>
+                        <td><a href="template.html#t50" target="_blank">Iconography</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t49">
+                        <td></td>
+                        <td><a href="template.html#t51" target="_blank">Decoration</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t50">
+                        <td></td>
+                        <td><a href="template.html#t52" target="_blank">Lettering</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t51">
+                        <td></td>
+                        <td><a href="template.html#t53" target="_blank">Date</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t52">
+                        <td></td>
+                        <td><a href="template.html#t53" target="_blank">Internal date</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t53">
+                        <td></td>
+                        <td><a href="template.html#t53" target="_blank">Dating criteria</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    <tr id="t54">
+                        <td></td>
+                        <td><a href="template.html#t53" target="_blank">Alternative dating</a></td>
+                        <td>Not currently handled by the SigiDoc stylesheet</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><b>Text</b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t55">
+                        <td></td>
+                        <td><a href="template.html#t54" target="_blank">Language(s)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t56">
+                        <td></td>
+                        <td><a href="template.html#t55" target="_blank">Edition(s)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t57">
+                        <td></td>
+                        <td><a href="template.html#t55" target="_blank">Commentary on edition(s)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t58">
+                        <td></td>
+                        <td><a href="template.html#t55" target="_blank">Parallel(s)</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t59">
+                        <td></td>
+                        <td><a href="template.html#t55" target="_blank">Commentary on parallel(s)</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><i>Images</i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t60">
+                        <td></td>
+                        <td><a href="template.html#t56" target="_blank">[Photo: obverse]</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t61">
+                        <td></td>
+                        <td><a href="template.html#t57" target="_blank">[Photo: reverse]</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t62">
+                        <td></td>
+                        <td><a href="template.html#t58" target="_blank">[Legend: obverse]</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t63">
+                        <td></td>
+                        <td><a href="template.html#t59" target="_blank">[Legend: reverse]</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><i>Editions</i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t64">
+                        <td></td>
+                        <td><a href="template.html#t60" target="_blank">Interpretive</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t65">
+                        <td></td>
+                        <td><a href="template.html#t61" target="_blank">Diplomatic</a></td>
+                        <td></td>
+                    </tr>
+                    <tr id="t66">
+                        <td></td>
+                        <td><a href="template.html#t62" target="_blank">Apparatus criticus</a></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="t67">
+                        <td><a href="template.html#t63" target="_blank"><i>Legend and Translation</i></a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="t68">
+                        <td><a href="template.html#t64" target="_blank"><i>Commentary</i></a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr id="t69">
+                        <td><a href="template.html#t65" target="_blank">Footnotes</a></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h5 class="responsibility">Responsibility for this page</h5>
+            <ul class="resp">
+                <li>Author: Alessio Sopracasa</li>
+                <li>Author: Martina Filosa</li>
+            </ul>
+        </div>
+        <div>
+            <p class="version">SigiDoc version: 1.0</p>
+        </div>
+    </body>
+</html>

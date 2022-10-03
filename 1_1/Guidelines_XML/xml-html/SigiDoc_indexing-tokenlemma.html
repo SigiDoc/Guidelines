@@ -1,0 +1,73 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Tokenisation and Lemmatisation</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         
+         <p>
+            
+            <h3>Elements</h3>
+            <ul class="speclit">
+               <li>&lt;w/&gt;</li>
+            </ul>
+            
+         </p>
+         
+         
+         <h3>Explanation</h3>
+         
+         <p>Explicit markup of words (tokenisation) and identification of their dictionary headwords
+            (lemmatisation) are both optional.
+            To explicitly mark-up lexical words, each word in the text should be enclosed in a
+            <span class="teiGi">w</span> element:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;w</span><span class="xmlAttName"> lemma=</span><span class="xmlAttVal">"ἵστημι"</span><span class="xmlAttName"> lemmaRef=</span><span class="xmlAttVal">"http://www.perseus.tufts.edu/hopper/morph?l= ἕστηκα&amp;la=greek"</span><span class="xmlTag">&gt;</span>ἕστηκα<span class="xmlTag">&lt;/w&gt;</span>
+                </pre>
+         <p>in <span class="teiAtt">lemma</span> the uninflected form
+         </p>
+         
+         <p>in <span class="teiAtt">lemmaRef</span> a URI pointing to the entry for the word in question in a database or online dictionary,
+            such as
+         </p>
+         
+         <p><a href="http://www.perseus.tufts.edu/hopper/morph?lang=greek" target="_blank">Perseus Greek</a></p>
+         
+         <p><a href="http://www.perseus.tufts.edu/hopper/morph?lang=latin" target="_blank">Perseus Latin</a></p>
+         
+         <p>Tokenisation and lemmatisation are mostly for words to be indexed not included in
+            the other categories.
+         </p>
+         
+         <p>Note that the URI as showed by the browser needs to be slighly modified, because the
+            ampersand ‘&amp;’ can not be part of <span class="teiAtt">lemmaRef</span>’s value as it is:
+            the mention ‘amp;’ should be added just after the &amp;.
+         </p>
+         
+         <p>For a more complete presentation, see the EpiDoc guidelines: <a href="https://epidoc.stoa.org/gl/latest/idx-wordslemmata.html" target="_blank">Words And Lemmatization</a>.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Word incompletely restored</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>[sta-·· ? ··]</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;w</span><span class="xmlAttName"> part=</span><span class="xmlAttVal">"I"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;supplied</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">&gt;</span>sta<span class="xmlTag">&lt;/supplied&gt;</span>
+                    <span class="xmlTag">&lt;/w&gt;</span>
+                    <span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"lost"</span><span class="xmlTag">/&gt;</span>
+                </pre>
+         <p>In <span class="teiGi">w</span> the attribute <span class="teiAtt">part</span> explains which part of the word has been restored, and, as a consequence, which part
+            is missing. Its values are:
+         </p>
+         
+         <p>"I" - the initial part of a word (i.e. the end is missing)</p>
+         
+         <p>"M" - the middle part of a word (i.e. the beginning and end are both missing)</p>
+         
+         <p>"F" - the final part of a word (i.e. the beginning is missing)</p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="indexing-miscellaneous">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Miscellaneous</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="index">
+                <p>
+                    <specList>
+                        <specDesc key="rs"/>
+                    </specList>
+                </p>
+            </div>
+            <div type="explanation">
+                <p>Important: <gi>rs</gi> should be specified by a <att>type</att> attribute, whose value(s) listed here are the only being currently handled by SigiDoc/EFES
+                    autority lists and they should be used as they appear here.</p>
+                <p>Intended for religious, political, military, economical, etc. terminology / Remarkable expressions.</p>
+                <p>Marian terms:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <rs type="marianTerm" subtype="appellative" ref="marianTerms.xml#Δέσποινα">Δέσποινα</rs> (other ex.: Theotoke in the invocation, or vocative in the legend; different from label)
+                    <rs type="marianTerm" subtype="label" ref="marianTerms.xml#..."></rs> (i.e. the name of the Virgin’s type inscribed on the seal [in the field], different from appellative)
+                    <rs type="marianTerm" subtype="sigla" ref="marianTerms.xml#..."></rs> (ex.: ΜP ΘV)
+                </egXML>
+                <p>Christ-related terms:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <rs type="christTerm" subtype="appellative"  ref="christTerms.xml#..."></rs>
+                    <rs type="christTerm" subtype="label"  ref="christTerms.xml#..."></rs>
+                    <rs type="christTerm" subtype="sigla"  ref="christTerms.xml#..."></rs>
+                </egXML>
+                <p>Saints-related terms:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <rs type="saintsTerm" subtype="appellative" ref="saintsTerms.xml#..."></rs> (Archistrategos for Michael, martyr, ...)
+                    <rs type="saintsTerm" subtype="label" ref="saintsTerms.xml#..."></rs> (i.e. the name of the saint’s type inscribed on the seal [in the field], different from saint's name; the adjective hagios should be included in the tag)
+                    <rs type="saintsTerm" subtype="sigla" ref="saintsTerms.xml#..."></rs> (ex.: Μ Χ)
+                    <rs type="saintsTerm" subtype="name" ref="saintsTerms.xml#..."></rs> (for ex., in an invocation in the legend; different from saint's label)
+                </egXML>
+                <p>Important: the attribute <att>subtype</att> is paramount in order to show in the Indices the difference among the various types of terms.</p>
+                <p>With the <att>subtype</att> 'appellative' should also be tagged the adressees of the invocations, the full text of which are however contained in a separate index (see "<ref target="SigiDoc_indexing-invocation.html">Invocations</ref>").</p>
+                <p>Other examples:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <rs type="ecclesiastical" ref="">ποιμήν</rs>
+                    <rs type="devotional" ref="">δοῦλος τῆς Θεοτόκου</rs> (connected to the seal's owner)
+                    <rs type="divinity" ref="">Κύριε</rs> (Trinity, different names for Christ, Theos, Cross)
+                    <rs type="genealogical" ref=""></rs> (only for explicit genealogical references)
+                </egXML>
+                <p>And so on... The choice of what kind of miscellaneous terms to index is a project’s decision.</p>
+                <p>The spelling should be normalised in the authority list.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

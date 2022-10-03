@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="indexing-geo">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Place/geographical names</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="index">
+                <p>
+                    <specList>
+                        <specDesc key="placeName"/>
+                        <specDesc key="geogName"/>
+                    </specList>
+                </p>
+            </div>
+            <div type="explanation">
+                <p>1. Political entities (cities, peoples, regions, themes, etc.), but also buildings, etc.:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <placeName type="" ref="">[name here]</placeName>
+                </egXML>
+                <p>Because multiple tagging is possible, it could be used in different but complementary ways, ex. for the cities:</p>
+                    <p>• to depict the typology of a place: <att>type</att>="city"</p>
+                    <p>• to depict the function for which the name is used on the seal: <att>type</att>="bishopric"</p>
+                    <p>Ethnonyms should be tagged as place names: e.g. in "bishop of the Nikopolitôn", "Nikopolitôn" should be indexed as Nikopolis.</p>
+                <p>2. Physical features (rivers, mountains, etc.):</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <geogName type="" ref="">[name here]</geogName>
+                </egXML>
+                <p>• Designed for the actual place + reference to the authority list.</p>
+                    <p>• The <att>type</att> attribute could be used to specify what kind of place/feature is: city, theme, diocesis, church, etc., and it can also be used to identify ethnic names as opposed to the place names themselves.</p>
+                    <p>• The spelling should be normalised in the authority list.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

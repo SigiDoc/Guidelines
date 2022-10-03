@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="supp-footnotes">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Footnotes</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="code">
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="commentary" subtype="footnotes"/>
+</egXML>
+                </div>
+                <div type="explanation">
+                <p>For bibliographic references or more detailed notes.</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <div type="commentary" subtype="footnotes">
+                        <p>...</p>
+                    </div>
+                </egXML>
+                <p><gi>p</gi> may contain <gi>bibl</gi> (for bibliographic references).</p>
+                <p>Note that the numbering must be manually entered both in the text and at the beginning of each note.</p>
+                    <p>One <gi>p</gi> per note.</p>
+                    <p>The attribute <att>subtype</att> differentiates this <gi>div</gi> <att>type</att>="commentary" from the one designed for the text of the commentary (<gi>div</gi> <att>type</att>="commentary" <att>subtype</att>="text").</p>
+                    <p>If footnotes are not necessary, there are 2 alternatives:</p>
+                    <p>1) nothing should be written in this <gi>div</gi>: a 'None' will appear below the title 'Footnotes';</p>
+                    <p>2) to make the whole section disappear: in the SigiDoc/EFES stylesheet "htm-tpl-struct-sigidoc.xsl" the <gi>div</gi> <att>id</att>="footnotes" and the <gi>div</gi> <att>class</att>="fnseparator" should be commented out.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

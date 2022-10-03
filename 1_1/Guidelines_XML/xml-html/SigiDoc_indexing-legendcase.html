@@ -1,0 +1,59 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Legend’s case</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         
+         <p>
+            
+            <h3>Elements</h3>
+            <ul class="speclit">
+               <li>&lt;rs/&gt;</li>
+            </ul>
+            
+         </p>
+         
+         
+         <h3>Explanation</h3>
+         
+         <p>Important: <span class="teiGi">rs</span> should be specified by a <span class="teiAtt">type</span> attribute, whose value(s) listed here are the only being currently handled by SigiDoc/EFES
+            autority lists and they should be used as they appear here:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;rs</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"legendsCases"</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"legendsCases.xml#Nom"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;lb</span><span class="xmlTag">/&gt;</span>[text]
+                    <span class="xmlTag">&lt;/rs&gt;</span>
+                </pre>
+         <p>Suggested abbreviations for cases: Nom, Gen, Dat, Acc, ..., or mixed cases: NomGen,
+            DatGen, ... (the minus should not be used).
+         </p>
+         
+         <p>In case of a bilateral legend in the same case, only obverse (or reverse) should be
+            completely tagged (with <span class="teiAtt">ref</span> to the authority list),
+            otherwise EFES will index 2 entries for a same legend.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>
