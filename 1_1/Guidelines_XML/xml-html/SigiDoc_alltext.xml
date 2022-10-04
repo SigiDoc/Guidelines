@@ -25,11 +25,13 @@
          
          End license statement: do not remove -->
 
+<!-- Last modified: 2022-10-04 -->
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="alltext">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:id="homeGL">List of All Trancription Guidelines: Leidenisation</title>
+                <title xml:id="homeGL">List of All Transcription Guidelines: Leidenisation</title>
             </titleStmt>
             <publicationStmt><p></p></publicationStmt>
             <sourceDesc><p></p></sourceDesc>

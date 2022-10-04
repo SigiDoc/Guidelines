@@ -25,6 +25,8 @@
          
          End license statement: do not remove -->
 
+<!-- Last modified: 2022-10-04 -->
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="allguidelines">
     <teiHeader>
         <fileDesc>
@@ -47,7 +49,7 @@
                 <head>List of Guidelines</head>
                 <list>
                     <item><ref target="../template/template.html">SigiDoc's Template: the Structure of a SigiDoc XML File</ref></item>
-                    <item><ref target="SigiDoc_alltext.html">List of All Trancription Guidelines: Leidenisation</ref></item>
+                    <item><ref target="SigiDoc_alltext.html">List of All Transcription Guidelines: Leidenisation</ref></item>
                     <item><ref target="SigiDoc_allsupp.html">Commentary and Documentary Sections of the Seals' Edition</ref></item>
                     <item><ref target="SigiDoc_allindex.html">List of All Indexing Guidelines</ref></item>
                 </list>
