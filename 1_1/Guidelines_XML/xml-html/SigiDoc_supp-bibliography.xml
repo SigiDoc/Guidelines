@@ -59,14 +59,11 @@
     <div type="bibliography" subtype="edition"/>
 </egXML>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-    <div type="bibliography" subtype="/parallels"/>
+    <div type="bibliography" subtype="parallels"/>
 </egXML>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-    <div type="bibliography" subtype="discussionCurrent"/>
+    <div type="bibliography" subtype="discussion"/>
 </egXML>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-    <div type="bibliography" subtype="discussionParallels"/>
- </egXML>
                 </div>
                 <div type="explanation">
                 <p>The following way to insert bibliographic references assumes the existence of a TEI xml file named "bibliography.xml" living in EFES (ROOT>content>xml>authority).</p>
@@ -79,10 +76,15 @@
                 </egXML>
                 <p>Visualisation after transformation: DO Seals, 1, p. 46.</p>
                 <p><att>target</att>'s value is the ID of the publication as it appears in the file "bibliography.xml".</p>
+                    <p>About the 3 <att>subtype</att>s:</p>
+                    <p>"edition": edition(s) of the current item;</p>
+                    <p>"parallels": edition(s) of the parallels of the current item; the references should be preceded by the mention of the place of preservation and by the inventory numbers;</p>
+                    <p>"discussion": further bibliographic references - without publication - about the current item or its parallels; the references should be followed 
+                        by the mention of the place of preservation and by the inventory numbers between brackets.</p>
                 <p>A short bibliographic reference will be printed in the seal’s edition, while a bibliographic concordance will be automaticaly populated with the complete reference.</p>
                     <p>Note that the element <gi>citedRange</gi> should be included also when empty, in order to populate the bibliographic concordance.</p>
                 <p>Bibliographic references could be added in this same way also in other <gi>div</gi>s.</p>
-                <p>The <gi>div</gi> should be repeated for each kind of bibliographic reference (edition, parallels, discussion).</p>
+                <p>The <gi>div</gi> should be repeated for each kind of bibliographic reference (edition, parallels, further references).</p>
             </div>
             </div>
             <div type="responsibility">

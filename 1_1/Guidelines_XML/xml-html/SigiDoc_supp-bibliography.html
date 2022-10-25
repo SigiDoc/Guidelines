@@ -19,14 +19,11 @@
     <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"bibliography"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"edition"</span><span class="xmlTag">/&gt;</span>
 </pre>
             <pre class="teiCode">
-    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"bibliography"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"/parallels"</span><span class="xmlTag">/&gt;</span>
+    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"bibliography"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"parallels"</span><span class="xmlTag">/&gt;</span>
 </pre>
             <pre class="teiCode">
-    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"bibliography"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"discussionCurrent"</span><span class="xmlTag">/&gt;</span>
+    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"bibliography"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"discussion"</span><span class="xmlTag">/&gt;</span>
 </pre>
-            <pre class="teiCode">
-    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"bibliography"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"discussionParallels"</span><span class="xmlTag">/&gt;</span>
- </pre>
             </section>
          
          <h3>Explanation</h3>
@@ -49,6 +46,20 @@
          <p><span class="teiAtt">target</span>'s value is the ID of the publication as it appears in the file "bibliography.xml".
          </p>
          
+         <p>About the 3 <span class="teiAtt">subtype</span>s:
+         </p>
+         
+         <p>"edition": edition(s) of the current item;</p>
+         
+         <p>"parallels": edition(s) of the parallels of the current item; the references should
+            be preceded by the mention of the place of preservation and by the inventory numbers;
+         </p>
+         
+         <p>"discussion": further bibliographic references - without publication - about the current
+            item or its parallels; the references should be followed 
+            by the mention of the place of preservation and by the inventory numbers between brackets.
+         </p>
+         
          <p>A short bibliographic reference will be printed in the seal’s edition, while a bibliographic
             concordance will be automaticaly populated with the complete reference.
          </p>
@@ -60,7 +71,7 @@
          </p>
          
          <p>The <span class="teiGi">div</span> should be repeated for each kind of bibliographic reference (edition, parallels,
-            discussion).
+            further references).
          </p>
          
          
