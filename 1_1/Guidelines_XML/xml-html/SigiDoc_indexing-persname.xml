@@ -96,6 +96,7 @@
                     <p>• An element <gi>addName</gi> with an attribute <att>type</att>="nick/epithet" could be added.</p>
                     <p>• A name can be tagged even also when it is lost:
                         <egXML xmlns="http://www.tei-c.org/ns/Examples"><name><gap reason="lost" atLeast="1" atMost="3" unit="character"/></name> = [c. 1 - 3]</egXML></p>
+                <p>• In case of an anonymous seal: if the owner is known elsewhere, another tag for the name should be added in the legend’s edition; consequently, in the title, this name should be added between square brackets.</p>
             </div>
             </div>
             <div type="responsibility">
