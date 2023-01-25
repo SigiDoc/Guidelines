@@ -59,6 +59,7 @@
                     <supplied reason="omitted">αβ</supplied>
                 </egXML>
                 <p>Letters erroneously omitted from the text, which the editor adds; omitted by mistake/accidentally.</p>
+                <p>For letters out of the support, because, for example, the latter is too little for the die, the value 'lost' should be used.</p>
                 <p>Note: it is not possible to add an <att>evidence</att>="parallel" attribute, because the visualisation after transformation would be
                     the same as for “<ref target="SigiDoc_editorial-parallel.html">Text restored by comparison with parallel copy</ref>”.</p>
             </div>
