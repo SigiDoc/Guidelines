@@ -79,10 +79,10 @@
                 </egXML>
                 <p>Inside a same <gi>div</gi>, multiple <gi>p</gi>s should bear the translations, each one with the appropriate <att>xml:lang</att>;
                     the first <gi>p</gi> is dedicated to the simple transcription of the legend, on a single line, without Leiden conventions, and without <att>xml:lang</att>, in order to get the Greek legend with all the languages.</p>
-                <p>The following signs should be used in all the <gi>p</gi>s:</p>
-                    <p>/ (slash) in order to separate obverse and reverse</p>
-                    <p>. (dot) in order to separate label/sigla from the legend</p> 
-                   <p>| (vertical bar) to mark the end of a verse line in a metrical legend; if it is also the end of the face, | / (vertical bar+slash).</p>
+                    <p>The following signs should be used:</p>
+                    <p>/ (slash) in order to separate obverse and reverse (transcription only)</p>
+                    <p>. (dot) in order to separate label/sigla from the legend (transcription and translation)</p> 
+                    <p>| (vertical bar) to mark the end of a verse line in a metrical legend; if it is also the end of the face, | / (vertical bar+slash) (transcription only).</p>
             </div>
             </div>
             <div type="responsibility">
