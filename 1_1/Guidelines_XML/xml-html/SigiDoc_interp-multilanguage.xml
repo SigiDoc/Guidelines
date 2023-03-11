@@ -29,7 +29,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Multi-language texts</title>
+                <title>2.5.6. Multi-language texts</title><!-- TOPIC TO BE ADDRESSED IN SPRING 2023, FOR NOW DEPRECATED -->
                 <respStmt>
                     <resp/>
                     <name/>
@@ -58,7 +58,7 @@
                 <egXML xmlns="http://www.tei-c.org/ns/Examples">
                     <div type="edition" subtype="editorial/diplomatic" xml:space="preserve" xml:lang="grc-Latn"/>
                 </egXML>
-                <p>In case of bilingual Greek/Latin legends, an <att>xml:lang</att> with value 'grc-Latn' should be added to the <gi>div</gi> <att>type</att>="edition" containing all the legend.</p>
+                <p>In case of bilingual Greek/Latin legends, an <att>xml:lang</att> with value 'grc-Latn' should be added to the <gi>div</gi> <att>type</att>="edition" containing all the legend.</p><!-- erroneus formulation: TO BE AMENDED!!! -->
                     <p>Note that this value is used here not only for different languages, but also for different alphabets, i.e. for a Greek legend written in Latin alphabet.</p>
             </div>
             </div>

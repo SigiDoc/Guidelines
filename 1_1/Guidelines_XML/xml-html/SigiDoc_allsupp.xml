@@ -29,7 +29,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:id="homeGL">Commentary and Documentary Sections of the Seals' Edition</title>
+                <title xml:id="homeGL">3. Commentary and Documentary Sections of the Seals' Edition</title>
             </titleStmt>
             <publicationStmt><p></p></publicationStmt>
             <sourceDesc><p></p></sourceDesc>
@@ -45,11 +45,11 @@
             </div>
             <div type="contentList">
                 <list>
-                    <item><ref target="SigiDoc_supp-apparatuscriticus.html">Apparatus criticus</ref></item>
-                    <item><ref target="SigiDoc_supp-bibliography.html">Bibliography</ref></item>
-                    <item><ref target="SigiDoc_supp-commentary.html">Commentary</ref></item>
-                    <item><ref target="SigiDoc_supp-footnotes.html">Footnotes</ref></item>
-                    <item><ref target="SigiDoc_supp-translation.html">Translation</ref></item>
+                    <item><ref target="SigiDoc_supp-apparatuscriticus.html">3.1. Apparatus criticus</ref></item>
+                    <item><ref target="SigiDoc_supp-bibliography.html">3.2. Bibliography</ref></item>
+                    <item><ref target="SigiDoc_supp-commentary.html">3.3. Commentary</ref></item>
+                    <item><ref target="SigiDoc_supp-footnotes.html">3.4. Footnotes</ref></item>
+                    <item><ref target="SigiDoc_supp-translation.html">3.5. Translation</ref></item>
                 </list>
             </div>
             </div>

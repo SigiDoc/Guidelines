@@ -31,7 +31,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:id="homeGL">List of All Transcription Guidelines: Leidenisation</title>
+                <title xml:id="homeGL">2. List of All Transcription Guidelines: Leidenisation</title>
             </titleStmt>
             <publicationStmt><p></p></publicationStmt>
             <sourceDesc><p></p></sourceDesc>
@@ -51,81 +51,81 @@
                     suitable for (Byzantine) sigillographic routines.</p>
             </div>
             <div type="contentList">
-                <head>Structure of the text</head>
+                <head>2.1. Structure of the text</head>
                 <list>
-                    <item><ref target="SigiDoc_struct-lines.html">Lines</ref></item>
-                    <item><ref target="SigiDoc_struct-columns.html">Columns</ref></item>
-                    <item><ref target="SigiDoc_struct-linebreak.html">Words divided across lines</ref></item>
-                    <item><ref target="SigiDoc_struct-verseline.html">Verse lines (metrical legends)</ref></item>
+                    <item><ref target="SigiDoc_struct-lines.html">2.1.1. Lines</ref></item>
+                    <item><ref target="SigiDoc_struct-columns.html">2.1.2. Columns</ref></item>
+                    <item><ref target="SigiDoc_struct-linebreak.html">2.1.3. Words divided across lines</ref></item>
+                    <item><ref target="SigiDoc_struct-verseline.html">2.1.4. Verse lines (metrical legends)</ref></item>
                 </list>
             </div>
             <div type="contentList">
-                <head>Trancription</head>
+                <head>2.2. Transcription</head>
                 <list>
-                    <item><ref target="SigiDoc_trans-cleartext.html">Clear text</ref></item>
-                    <item><ref target="SigiDoc_trans-uninterpreted.html">Uninterpreted characters: clear but incomprehensible letters</ref></item>
-                    <item><ref target="SigiDoc_trans-ambiguousdamaged.html">Ambiguous / damaged characters</ref></item>
-                    <item><ref target="SigiDoc_trans-lostlineknown.html">Lost lines: quantity known</ref></item>
-                    <item><ref target="SigiDoc_trans-lostlineunknown.html">Lost lines: quantity unknown</ref></item>
-                    <item><ref target="SigiDoc_trans-lostlineapproxquantity.html">Lost lines: approximate quantity</ref></item>
-                    <item><ref target="SigiDoc_trans-lostlineapproxextent.html">Lost lines: approximate extent</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblelineknown.html">Illegible lines: quantity known</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblelineunknown.html">Illegible lines: quantity unknown</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblelineapproxquantity.html">Illegible lines: approximate quantity</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblelineapproxextent.html">Illegible lines: approximate extent</ref></item>
-                    <item><ref target="SigiDoc_trans-lostcharknown.html">Lost characters: quantity known</ref></item>
-                    <item><ref target="SigiDoc_trans-lostcharunknown.html">Lost characters: quantity unknown</ref></item>
-                    <item><ref target="SigiDoc_trans-lostcharapproxquantity.html">Lost characters: approximate quantity</ref></item>
-                    <item><ref target="SigiDoc_trans-lostcharapproxextent.html">Lost characters: approximate extent</ref></item>
-                    <item><ref target="SigiDoc_trans-lostcharnumeral.html">Lost characters: numerals</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblecharknown.html">Illegible characters: quantity known</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblecharunknown.html">Illegible characters: quantity unknown</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblecharapproxquantity.html">Illegible characters: approximate quantity</ref></item>
-                    <item><ref target="SigiDoc_trans-illegiblecharapproxextent.html">Illegible characters: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-cleartext.html">2.2.1. Clear text</ref></item>
+                    <item><ref target="SigiDoc_trans-uninterpreted.html">2.2.2. Uninterpreted characters: clear but incomprehensible letters</ref></item>
+                    <item><ref target="SigiDoc_trans-ambiguousdamaged.html">2.2.3. Ambiguous / damaged characters</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineknown.html">2.2.4. Lost lines: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineunknown.html">2.2.5. Lost lines: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineapproxquantity.html">2.2.6. Lost lines: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-lostlineapproxextent.html">2.2.7. Lost lines: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineknown.html">2.2.8. Illegible lines: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineunknown.html">2.2.9. Illegible lines: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineapproxquantity.html">2.2.10. Illegible lines: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblelineapproxextent.html">2.2.11. Illegible lines: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharknown.html">2.2.12. Lost characters: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharunknown.html">2.2.13. Lost characters: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharapproxquantity.html">2.2.14. Lost characters: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharapproxextent.html">2.2.15. Lost characters: approximate extent</ref></item>
+                    <item><ref target="SigiDoc_trans-lostcharnumeral.html">2.2.16. Lost characters: numerals</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharknown.html">2.2.17. Illegible characters: quantity known</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharunknown.html">2.2.18. Illegible characters: quantity unknown</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharapproxquantity.html">2.2.19. Illegible characters: approximate quantity</ref></item>
+                    <item><ref target="SigiDoc_trans-illegiblecharapproxextent.html">2.2.20. Illegible characters: approximate extent</ref></item>
                 </list>
             </div>
             <div type="contentList">
-                <head>Form and appearance</head>
+                <head>2.3. Form and appearance</head>
                 <list>
-                    <item><ref target="SigiDoc_form-supralinearetc.html">Supralinear lines, underlining</ref></item>
-                    <item><ref target="SigiDoc_form-raisedlowered.html">Raised or lowered characters</ref></item>
-                    <item><ref target="SigiDoc_form-ligature.html">Ligatured letters</ref></item>
-                    <item><ref target="SigiDoc_form-symbolnotmean.html">Symbols (cross, leaf, scroll, fleurette, etc.)</ref></item>
+                    <item><ref target="SigiDoc_form-supralinearetc.html">2.3.1. Supralinear lines, underlining</ref></item>
+                    <item><ref target="SigiDoc_form-raisedlowered.html">2.3.2. Raised or lowered characters</ref></item>
+                    <item><ref target="SigiDoc_form-ligature.html">2.3.3. Ligatured letters</ref></item>
+                    <item><ref target="SigiDoc_form-symbolnotmean.html">2.3.4. Symbols (cross, leaf, scroll, fleurette, etc.)</ref></item>
                 </list>
             </div>
             <div type="contentList">
-                <head>Editorial interventions</head>
+                <head>2.4. Editorial interventions</head>
                 <list>
-                    <item><ref target="SigiDoc_editorial-charrestored.html">Characters lost but restored</ref></item>
-                    <item><ref target="SigiDoc_editorial-charrestoredtentative.html">Characters lost and restored tentatively</ref></item>
-                    <item><ref target="SigiDoc_editorial-restoredincomplete.html">Word incompletely restored</ref></item>
-                    <item><ref target="SigiDoc_editorial-previouseditor.html">Text visible to previous editor, but now lost</ref></item>
-                    <item><ref target="SigiDoc_editorial-parallel.html">Text restored by comparison with parallel seal</ref></item>
-                    <item><ref target="SigiDoc_editorial-similar.html">Text restored by comparison with similar but not parallel seal</ref></item>
-                    <item><ref target="SigiDoc_editorial-superfluous.html">Superfluous letters/text suppressed by editor</ref></item>
-                    <item><ref target="SigiDoc_editorial-omitted.html">Omitted letters added by editor</ref></item>
-                    <item><ref target="SigiDoc_editorial-correction.html">Letters corrected by editor</ref></item>
-                    <item><ref target="SigiDoc_editorial-regularisation.html">Regularisation</ref></item>
-                    <item><ref target="SigiDoc_editorial-abbrevfully.html">Expansion of abbreviation</ref></item>
-                    <item><ref target="SigiDoc_editorial-abbrevuncert.html">Uncertain expansion of abbreviation</ref></item>
-                    <item><ref target="SigiDoc_editorial-abbrevunknown.html">Abbreviation where expansion unknown</ref></item>
-                    <item><ref target="SigiDoc_editorial-abbrevsymbol.html">Expansion of symbol</ref></item>
-                    <item><ref target="SigiDoc_editorial-monogram.html">Monograms</ref></item>
-                    <item><ref target="SigiDoc_editorial-monogramuncert.html">Monograms: uncertain solution</ref></item>
-                    <item><ref target="SigiDoc_editorial-monogramunsolved.html">Unsolved monograms</ref></item>
-                    <item><ref target="SigiDoc_editorial-editorsnote.html">Editor’s note</ref></item>
-                    <item><ref target="SigiDoc_editorial-altreading.html">Alternative readings</ref></item>
+                    <item><ref target="SigiDoc_editorial-charrestored.html">2.4.1. Characters lost but restored</ref></item>
+                    <item><ref target="SigiDoc_editorial-charrestoredtentative.html">2.4.2. Characters lost and restored tentatively</ref></item>
+                    <item><ref target="SigiDoc_editorial-restoredincomplete.html">2.4.3. Word incompletely restored</ref></item>
+                    <item><ref target="SigiDoc_editorial-previouseditor.html">2.4.4. Text visible to previous editor, but now lost</ref></item>
+                    <item><ref target="SigiDoc_editorial-parallel.html">2.4.5. Text restored by comparison with parallel seal</ref></item>
+                    <item><ref target="SigiDoc_editorial-similar.html">2.4.6. Text restored by comparison with similar but not parallel seal</ref></item>
+                    <item><ref target="SigiDoc_editorial-superfluous.html">2.4.7. Superfluous letters/text suppressed by editor</ref></item>
+                    <item><ref target="SigiDoc_editorial-omitted.html">2.4.8. Omitted letters added by editor</ref></item>
+                    <item><ref target="SigiDoc_editorial-correction.html">2.4.9. Letters corrected by editor</ref></item>
+                    <item><ref target="SigiDoc_editorial-regularisation.html">2.4.10. Regularisation</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevfully.html">2.4.11. Expansion of abbreviation</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevuncert.html">2.4.12. Uncertain expansion of abbreviation</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevunknown.html">2.4.13. Abbreviation where expansion unknown</ref></item>
+                    <item><ref target="SigiDoc_editorial-abbrevsymbol.html">2.4.14. Expansion of symbol</ref></item>
+                    <item><ref target="SigiDoc_editorial-monogram.html">2.4.15. Monograms</ref></item>
+                    <item><ref target="SigiDoc_editorial-monogramuncert.html">2.4.16. Monograms: uncertain solution</ref></item>
+                    <item><ref target="SigiDoc_editorial-monogramunsolved.html">2.4.17. Unsolved monograms</ref></item>
+                    <item><ref target="SigiDoc_editorial-editorsnote.html">2.4.18. Editor’s note</ref></item>
+                    <item><ref target="SigiDoc_editorial-altreading.html">2.4.19. Alternative readings</ref></item>
                 </list>
             </div>
             <div type="contentList">
-                <head>Interpretation</head>
+                <head>2.5. Interpretation</head>
                 <list>
-                    <item><ref target="SigiDoc_interp-numeralknown.html">Numerals: value known</ref></item>
-                    <item><ref target="SigiDoc_interp-numeralunknown.html">Numerals: value unknown because lost or illegible</ref></item>
-                    <item><ref target="SigiDoc_interp-numeraltick.html">Numerals: with tick symbol/diacritic</ref></item>
-                    <item><ref target="SigiDoc_interp-numeralrange.html">Numerals: with range of possible values</ref></item>
-                    <item><ref target="SigiDoc_interp-numeraldate.html">Numerals: dates (years and indictions)</ref></item>
-                    <item><ref target="SigiDoc_interp-multilanguage.html">Multi-language texts</ref></item>
+                    <item><ref target="SigiDoc_interp-numeralknown.html">2.5.1. Numerals: value known</ref></item>
+                    <item><ref target="SigiDoc_interp-numeralunknown.html">2.5.2. Numerals: value unknown because lost or illegible</ref></item>
+                    <item><ref target="SigiDoc_interp-numeraltick.html">2.5.3. Numerals: with tick symbol/diacritic</ref></item>
+                    <item><ref target="SigiDoc_interp-numeralrange.html">2.5.4. Numerals: with range of possible values</ref></item>
+                    <item><ref target="SigiDoc_interp-numeraldate.html">2.5.5. Numerals: dates (years and indictions)</ref></item>
+                    <!--<item><ref target="SigiDoc_interp-multilanguage.html">2.5.6. Multi-language texts</ref></item>-->
                 </list>
             </div>
             </div>

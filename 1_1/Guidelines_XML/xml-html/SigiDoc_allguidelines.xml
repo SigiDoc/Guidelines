@@ -48,10 +48,10 @@
             <div type="contentList">
                 <head>List of Guidelines</head>
                 <list>
-                    <item><ref target="../template/template.html">SigiDoc's Template: the Structure of a SigiDoc XML File</ref></item>
-                    <item><ref target="SigiDoc_alltext.html">List of All Transcription Guidelines: Leidenisation</ref></item>
-                    <item><ref target="SigiDoc_allsupp.html">Commentary and Documentary Sections of the Seals' Edition</ref></item>
-                    <item><ref target="SigiDoc_allindex.html">List of All Indexing Guidelines</ref></item>
+                    <item><ref target="../template/template.html">1. SigiDoc's Template: the Structure of a SigiDoc XML File</ref></item>
+                    <item><ref target="SigiDoc_alltext.html">2. List of All Transcription Guidelines: Leidenisation</ref></item>
+                    <item><ref target="SigiDoc_allsupp.html">3. Commentary and Documentary Sections of the Seals' Edition</ref></item>
+                    <item><ref target="SigiDoc_allindex.html">4. List of All Indexing Guidelines</ref> (currently being reassessed)</item>
                 </list>
             </div>
             <div type="intro">
