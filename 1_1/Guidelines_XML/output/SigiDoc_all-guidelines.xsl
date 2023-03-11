@@ -45,7 +45,7 @@
     <xsl:template match="tei:div[@type='contentList']//tei:list">
         <xsl:for-each select="tei:item">
             <ul class="line">
-                <li><xsl:apply-templates select="tei:ref"/></li>
+                <li><xsl:apply-templates/></li>
             </ul>
         </xsl:for-each>
     </xsl:template>
