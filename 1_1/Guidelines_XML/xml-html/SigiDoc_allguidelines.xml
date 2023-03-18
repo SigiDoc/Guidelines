@@ -25,13 +25,13 @@
          
          End license statement: do not remove -->
 
-<!-- Last modified: 2022-10-04 -->
+<!-- Last modified: 2023-03-18 -->
 
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="allguidelines">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title xml:id="home">SigiDoc Guidelines: Byzantine Seals in TEI-XML</title>
+                <title xml:id="home">SigiDoc Guidelines 1.1</title>
             </titleStmt>
             <publicationStmt><p></p></publicationStmt>
             <sourceDesc><p></p></sourceDesc>
@@ -42,6 +42,7 @@
         <body>
             <div type="content">
                 <div type="intro">
+                    <head>Byzantine Seals in TEI-XML</head>
                 <p>SigiDoc is a standard for the enconding of Byzantine seals' editions in TEI-XML, largely based on the experience gained by EpiDoc for inscriptions and papyri. This means that becoming familiar with <ref target="https://epidoc.stoa.org/gl/latest/">EpiDoc Guidelines</ref> is extremely important also when using SigiDoc. These <hi rend="italic">SigiDoc Guidelines</hi> are mainly focused on four major topics: the SigiDoc XML template, the transcription of seals' legends, features such as apparatus criticus, commentary or bibliography, and the indexing of the data.</p>
                     <p>Consequently, this page groups together the links to all these main sections of the Guidelines:</p>
             </div>
@@ -52,12 +53,14 @@
                     <item><ref target="SigiDoc_alltext.html">2. List of All Transcription Guidelines: Leidenisation</ref></item>
                     <item><ref target="SigiDoc_allsupp.html">3. Commentary and Documentary Sections of the Seals' Edition</ref></item>
                     <item><ref target="SigiDoc_allindex.html">4. List of All Indexing Guidelines</ref> (currently being reassessed)</item>
+                    <item><ref target="SigiDoc_controlled-vocabularies_elements.html">5. Controlled vocabulary for elements</ref></item>
+                    <item><ref target="SigiDoc_controlled-vocabularies_attributes.html">6. List of attributes' values</ref></item>
                 </list>
             </div>
             <div type="intro">
                 <p>From these topics the metadata of the seals (such as physical description, history, dating, etc.) are excluded, since they are not (at least for the moment) dealt with in detail in this SigiDoc Guidelines; however, important information can be found in the explanation of the <ref target="../template/template.html">SigiDoc template</ref> and, of course, in the <ref target="https://epidoc.stoa.org/gl/latest/app-allsupp.html">EpiDoc Guidelines</ref>.</p>
                 <p>How to cite these Guidelines:</p>
-                <p>Alessio Sopracasa, Martina Filosa (2021), <hi rend="italic">SigiDoc Guidelines: Byzantine Seals in TEI-XML (version 1)</hi>. Available: <ref target="http://sigidoc.huma-num.fr/">http://sigidoc.huma-num.fr/</ref>.</p>
+                <p>Alessio Sopracasa, Martina Filosa <hi rend="italic">et al.</hi> (2023), <hi rend="italic">SigiDoc Guidelines: Byzantine Seals in TEI-XML (version 1.1)</hi>. Available: <ref target="http://sigidoc.huma-num.fr/">http://sigidoc.huma-num.fr/</ref>.</p>
             </div>
             </div>
             <div type="responsibility">
@@ -75,7 +78,7 @@
                 </listBibl>
             </div>
             <div type="version">
-                <p>SigiDoc version: 1.0</p>
+                <p>SigiDoc version: 1.1</p>
             </div>
         </body>
     </text>

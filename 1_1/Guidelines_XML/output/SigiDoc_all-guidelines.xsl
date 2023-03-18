@@ -32,6 +32,10 @@
         <section class="all"><xsl:apply-templates/></section>
     </xsl:template>
     
+    <xsl:template match="tei:body//tei:div[@type='content']//tei:div[@type='intro']//tei:head">
+       <h2><xsl:apply-templates/></h2>
+    </xsl:template>
+    
     <xsl:template match="tei:p">
         <p>
             <xsl:apply-templates/>
