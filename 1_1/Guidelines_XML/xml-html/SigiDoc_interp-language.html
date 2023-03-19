@@ -1,0 +1,102 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.5.6. Legend's language(s) and script(s)</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>abc αβγ</b></li>
+            <li>Diplomatic edition: <b>abc αβγ</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                        <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"edition"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">""</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"***"</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"textpart"</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"***"</span><span class="xmlTag">/&gt;</span>
+                        <span class="xmlTag">&lt;/div&gt;</span>
+                    </pre>
+         <p>The language and the script of a seal's legend should be encoded with the <span class="teiAtt">xml:lang</span> attribute.
+            The most part of the Byzantine seals' legends are written in a single language and
+            in a single alphabet: in this case,
+            a single <span class="teiAtt">xml:lang</span> should be used, as an attribute of  <span class="teiGi">div</span>
+            <span class="teiAtt">type</span>="edition".
+         </p>
+         
+         <p>However, it is not uncommon to work on legends written in different languages and/or
+            different scripts on the same seal.
+            In those cases, the encoding should reflect this more complex situation: in addition
+            to the attribute <span class="teiAtt">xml:lang</span> on the <span class="teiGi">div</span>
+            <span class="teiAtt">type</span>="edition", which reflects the situation of the whole legend, an <span class="teiAtt">xml:lang</span>
+            should should also be added to its child element, the <span class="teiGi">div</span> <span class="teiAtt">type</span>="textpart".
+         </p>
+         
+         <p>In order to choose the appropriate <span class="teiAtt">xml:lang</span>'s value, a SigiDoc user should refer to the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry" target="_blank">IANA Language Subtag Registry</a>.
+            The most common for Byzantine seals are the following:
+         </p>
+         
+         <p>• Grek = Greek script</p>
+         
+         <p>• Latn = Latin script</p>
+         
+         <p>• grc = Ancient Greek language (to 1453; assumed to be in its standard script: Grek)</p>
+         
+         <p>• la = Latin language (assumed to be in its standard script: Latn)</p>
+         
+         <p>• grc-Latn = Ancient Greek Language (to 1453), rendered in Latin script</p>
+         
+         <p>• la-Grek = Latin written in Greek script</p>
+         
+         <p>Not all of these codes are officially registered. In fact, a project may need specific
+            language codes:
+            it is recommended to define these codes within the SigiDoc file (with <span class="teiGi">langUsage</span>)
+            and to create them taking into account the rules established by the Network Working
+            Group's RFC 5646, on which see the <a href="https://epidoc.stoa.org/gl/latest/supp-language.html" target="_blank">EpiDoc Guidelines</a>.
+         </p>
+         
+         <p>The following is an example of a bilingual (Greek and Latin) legend (from the Seyrig
+            Collection, no. 91):
+         </p>
+         <pre class="teiCode">
+                        <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"edition"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"editorial"</span><span class="xmlAttName"> xml:space=</span><span class="xmlAttVal">"preserve"</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"grc-la"</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"textpart"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"face"</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"obv"</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"linear"</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"grc"</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;ab</span><span class="xmlTag">&gt;</span>
+                                  <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"1"</span><span class="xmlTag">/&gt;</span>Γεν
+                                  <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"2"</span><span class="xmlAttName"> break=</span><span class="xmlAttVal">"no"</span><span class="xmlTag">/&gt;</span>ναδί
+                                  <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"3"</span><span class="xmlAttName"> break=</span><span class="xmlAttVal">"no"</span><span class="xmlTag">/&gt;</span>ου
+                                <span class="xmlTag">&lt;/ab&gt;</span>
+                            <span class="xmlTag">&lt;/div&gt;</span>
+                            <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"textpart"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"face"</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"rev"</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"linear"</span><span class="xmlAttName"> xml:lang=</span><span class="xmlAttVal">"la"</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;ab</span><span class="xmlTag">&gt;</span>
+                                  <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"4"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>com<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>itis<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span>
+                                  <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"5"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>Sacr<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>arum<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span>
+                                  <span class="xmlTag">&lt;lb</span><span class="xmlAttName"> n=</span><span class="xmlAttVal">"6"</span><span class="xmlTag">/&gt;</span><span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>L<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>argitionum<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span>
+                               <span class="xmlTag">&lt;/ab&gt;</span>
+                            <span class="xmlTag">&lt;/div&gt;</span>
+                        <span class="xmlTag">&lt;/div&gt;</span>
+                    </pre>
+         <p>The order in which the languages are written in the <span class="teiAtt">xml:lang</span>'s value does not imply an hierarchy.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.1</p></span>
+      
+      
+      
+   </body>
+</html>

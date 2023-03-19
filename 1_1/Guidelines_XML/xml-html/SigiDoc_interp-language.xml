@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="interp-multilanguage">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2.5.6. Legend's language(s) and script(s)</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                    <cit type="interpretive">
+                        <quote>abc αβγ</quote>
+                    </cit>
+                    <cit type="diplomatic">
+                        <quote>abc αβγ</quote>
+                    </cit>
+                </div>
+                <div type="explanation">
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <div type="edition" subtype="" xml:lang="***">
+                            <div type="textpart" xml:lang="***"></div>
+                        </div>
+                    </egXML>
+                    <p>The language and the script of a seal's legend should be encoded with the <att>xml:lang</att> attribute.
+                        The most part of the Byzantine seals' legends are written in a single language and in a single alphabet: in this case,
+                        a single <att>xml:lang</att> should be used, as an attribute of  <gi>div</gi>
+                        <att>type</att>="edition".</p>
+                    <p>However, it is not uncommon to work on legends written in different languages and/or different scripts on the same seal.
+                        In those cases, the encoding should reflect this more complex situation: in addition to the attribute <att>xml:lang</att> on the <gi>div</gi>
+                        <att>type</att>="edition", which reflects the situation of the whole legend, an <att>xml:lang</att>
+                        should should also be added to its child element, the <gi>div</gi> <att>type</att>="textpart".</p>
+                    <p>In order to choose the appropriate <att>xml:lang</att>'s value, a SigiDoc user should refer to the <ref target="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA Language Subtag Registry</ref>.
+                    The most common for Byzantine seals are the following:</p>
+                    <p>• Grek = Greek script</p>
+                    <p>• Latn = Latin script</p>
+                    <p>• grc = Ancient Greek language (to 1453; assumed to be in its standard script: Grek)</p>
+                    <p>• la = Latin language (assumed to be in its standard script: Latn)</p>
+                    <p>• grc-Latn = Ancient Greek Language (to 1453), rendered in Latin script</p>
+                    <p>• la-Grek = Latin written in Greek script</p>
+                    <p>Not all of these codes are officially registered. In fact, a project may need specific language codes:
+                        it is recommended to define these codes within the SigiDoc file (with <gi>langUsage</gi>)
+                        and to create them taking into account the rules established by the Network Working Group's RFC 5646, on which see the <ref target="https://epidoc.stoa.org/gl/latest/supp-language.html">EpiDoc Guidelines</ref>.</p>
+                    <p>The following is an example of a bilingual (Greek and Latin) legend (from the Seyrig Collection, no. 91):</p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                        <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="grc-la">
+                            <div type="textpart" subtype="face" n="obv" rend="linear" xml:lang="grc">
+                                <ab>
+                                  <lb n="1"/>Γεν
+                                  <lb n="2" break="no"/>ναδί
+                                  <lb n="3" break="no"/>ου
+                                </ab>
+                            </div>
+                            <div type="textpart" subtype="face" n="rev" rend="linear" xml:lang="la">
+                                <ab>
+                                  <lb n="4"/><expan><abbr>com</abbr><ex>itis</ex></expan>
+                                  <lb n="5"/><expan><abbr>Sacr</abbr><ex>arum</ex></expan>
+                                  <lb n="6"/><expan><abbr>L</abbr><ex>argitionum</ex></expan>
+                               </ab>
+                            </div>
+                        </div>
+                    </egXML>
+                    <p>The order in which the languages are written in the <att>xml:lang</att>'s value does not imply an hierarchy.</p>
+                </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.1</p>
+            </div>
+        </body>
+    </text>
+</TEI>
