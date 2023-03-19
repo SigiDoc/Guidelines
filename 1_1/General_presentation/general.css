@@ -34,12 +34,12 @@ float:right;
 position:relative;
 }
 
-div.logo1 {
+/*div.logo1 {
 float: right;
 left: -120px;
 position: relative;
 top: -120px;
-}
+}*/
 
 figure.page {
 float:left;
@@ -67,4 +67,27 @@ p.version {
     margin: 1em;
     color: #FFFFFF;
 /*    position: fixed;*/
+}
+
+/*added by MF March 2023*/
+
+footer {
+    padding: 0.8em 2em;
+    margin: 1em;
+    background-color: #FEFEFE;
+    border-radius: 0.4em;
+    border: 1px solid grey;
+    line-height: 1em;
+}
+
+p#logos {
+    text-align: center;
+    line-height: 4em;
+    margin: 1em;
+}
+
+p#licence span {
+    font-size: smaller;
+    color: #000000;
+    text-align: center;
 }
