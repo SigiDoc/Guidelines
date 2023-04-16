@@ -60,18 +60,16 @@
                 </div>
                 <div type="explanation">
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                        <div type="edition" subtype="" xml:lang="***">
-                            <div type="textpart" xml:lang="***"></div>
+                        <div type="edition" subtype="">
+                            <div type="textpart" n="obv" xml:lang="***"></div>
+                            <div type="textpart" n="rev" xml:lang="***"></div>
                         </div>
                     </egXML>
-                    <p>The language and the script of a seal's legend should be encoded with the <att>xml:lang</att> attribute.
-                        The most part of the Byzantine seals' legends are written in a single language and in a single alphabet: in this case,
-                        a single <att>xml:lang</att> should be used, as an attribute of  <gi>div</gi>
-                        <att>type</att>="edition".</p>
-                    <p>However, it is not uncommon to work on legends written in different languages and/or different scripts on the same seal.
-                        In those cases, the encoding should reflect this more complex situation: in addition to the attribute <att>xml:lang</att> on the <gi>div</gi>
-                        <att>type</att>="edition", which reflects the situation of the whole legend, an <att>xml:lang</att>
-                        should should also be added to its child element, the <gi>div</gi> <att>type</att>="textpart".</p>
+                    <p>The language and the script of a seal's legend should be encoded with the <att>xml:lang</att> attribute, associated to the two <gi>div</gi> <att>type</att>="textpart" for obverse and reverse,
+                        nested inside <gi>div</gi> <att>type</att>="edition".
+                        Because the most part of the Byzantine seals' legends are written in a single language and in a single alphabet, the same value will be given to both <att>xml:lang</att>.</p>
+                    <p>However, it is not uncommon to work on legends written in different languages and/or different scripts on a same seal.
+                        In those cases, the encoding should reflect this more complex situation and the <att>xml:lang</att>'s values could be different.</p>
                     <p>In order to choose the appropriate <att>xml:lang</att>'s value, a SigiDoc user should refer to the <ref target="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA Language Subtag Registry</ref>.
                     The most common for Byzantine seals are the following:</p>
                     <p>• Grek = Greek script</p>
@@ -85,7 +83,7 @@
                         and to create them taking into account the rules established by the Network Working Group's RFC 5646, on which see the <ref target="https://epidoc.stoa.org/gl/latest/supp-language.html">EpiDoc Guidelines</ref>.</p>
                     <p>The following is an example of a bilingual (Greek and Latin) legend (from the Seyrig Collection, no. 91):</p>
                     <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                        <div type="edition" subtype="editorial" xml:space="preserve" xml:lang="grc-la">
+                        <div type="edition" subtype="editorial" xml:space="preserve">
                             <div type="textpart" subtype="face" n="obv" rend="linear" xml:lang="grc">
                                 <ab>
                                   <lb n="1"/>Γεν
@@ -102,7 +100,6 @@
                             </div>
                         </div>
                     </egXML>
-                    <p>The order in which the languages are written in the <att>xml:lang</att>'s value does not imply an hierarchy.</p>
                 </div>
             </div>
             <div type="responsibility">
