@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="supp-translation">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>3.5. Translation</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="code">
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="translation"/>
+</egXML>
+                </div>
+                <div type="explanation">
+                <p>A basic way to tag a translation would be:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <div type="translation">
+                        <p>...</p>
+                    </div>
+                </egXML>
+                <p>The translation <gi>div</gi>s could bear <att>subtype</att> attributes with values such as "literal", "poetic", "free" and so forth.</p>
+                    <p><gi>p</gi> may contain <gi>bibl</gi> (for bibliographical references).</p>
+                    <p><gi>gap</gi> and <gi>supplied</gi> could be used.</p>
+                <p>For transations in multiple languages. An edition might encode translations in more than one modern language, which would then be differentiated by means of <att>xml:lang</att> attributes:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <div type="translation">
+                        <p>+Constantinos Constantinou καὶ Anastasia ec Θeu basileis Romaion.</p>
+                        <p xml:lang="en">Constantine son of Constantine, and Anastasia, in God emperors of the Romans.</p>
+                        <p xml:lang="fr">Constantin fils de Constantin, et Anastasie, en Dieu empereurs des Romains.</p>
+                    </div>
+                </egXML>
+                <p>Inside a same <gi>div</gi>, multiple <gi>p</gi>s should bear the translations, each one with the appropriate <att>xml:lang</att>;
+                    the first <gi>p</gi> is dedicated to the simple transcription of the legend, on a single line, without Leiden conventions, and without <att>xml:lang</att>, in order to get the Greek legend with all the languages.</p>
+                    <p>The following signs should be used:</p>
+                    <p>/ (slash) in order to separate obverse and reverse (transcription only)</p>
+                    <p>. (dot) in order to separate label/sigla from the legend (transcription and translation)</p> 
+                    <p>| (vertical bar) to mark the end of a verse line in a metrical legend; if it is also the end of the face, | / (vertical bar+slash) (transcription only).</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>
+

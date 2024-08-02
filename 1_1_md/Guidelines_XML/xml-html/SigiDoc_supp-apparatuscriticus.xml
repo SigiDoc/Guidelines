@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="supp-apparatuscriticus">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>3.1. External apparatus criticus</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="code">
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="apparatus"/>
+</egXML>
+                </div>
+                <div type="explanation">
+                <p>The following tags should be used – in full or in part – in the external apparatus criticus.</p>
+                <p><gi>listApp</gi>: contains a list of apparatus entries:</p>
+                    <p><gi>app</gi> with an attribute <att>loc</att>: contains one entry in a critical apparatus (i.e. one <gi>app</gi> per entry); <att>loc</att> indicates the line the <gi>app</gi>'s content refers to
+                        (its value should be 1 or 2 or 3 ...; or 1-2, 2-5, etc.);</p>
+                <p><gi>lem</gi>: when the <gi>app</gi>'s content concerns a particular word or phrase, the latter should be written inside <gi>lem</gi>;
+                    if a textual variation is proposed, here should be written the reading appearing in the edition:</p>
+                    <p>• and supposed to be changed, if the correction/variant/... is proposed in the apparatus with <gi>rdg</gi>;</p>
+                    <p>• or, if the reading has been already changed in the edition, <gi>rdg</gi> will contain the deprecated reading;</p>
+                    <p><gi>rdg</gi>: contains a single reading (in case of a textual variation, here should be written the variant reading, proposed or deprecated); 
+                        alternatively, it could contain a <gi>note</gi> for a more detailed explanation, in which a <gi>bibl</gi> could be added for a short bibliographical reference;</p>
+                    <p><gi>note</gi>: could be an alternative to <gi>rdg</gi> after <gi>lem</gi> or also to both <gi>lem</gi> and <gi>rdg</gi> (that is, to be nested just after <gi>app</gi>).</p>
+                <p>The apparatus may contain <gi>bibl</gi> (for bibliographic references).</p>
+                <p>A FEW EXAMPLES</p>
+                <p>► Correction in the apparatus</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <div type="edition">
+                        <ab>
+                            <lb n="1"/>Ἄστυ
+                        </ab>
+                    </div>
+                    [...]
+                    <div type="apparatus">
+                        <listApp>
+                            <app loc="1"><lem>Ἄστυ</lem><rdg>Σθέν(ος)</rdg></app>
+                        </listApp>
+                    </div>
+                </egXML>
+                <p>Visualisation in the apparatus:</p>
+                    <p>1: Ἄστυ : Σθέν(ος) [where Ἄστυ is the edition's version and Σθέν(ος) the proposed variant reading]</p>
+                <p>► Correction with short bibliographical reference bearing a different reading:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <listApp>
+                        <app loc="4-5">
+                            <lem>τ]οὺς λ[ό]γους</lem>
+                            <rdg>
+                                <note>in <bibl>[tags for the bibliography]2.22</bibl> wrong reading τὰς κρίσεις, to be corrected</note>
+                            </rdg>
+                        </app>
+                    </listApp>
+                </egXML>
+                <p>Visualisation in the apparatus:</p>
+                    <p>4-5: τ]οὺς λ[ό]γους : in DOseals 3.2.22 wrong reading τὰς κρίσεις, to be corrected</p>
+                <p>This system allows to point to several words within the same line.</p>
+                    <p>The <att>cert</att>="low" as an <gi>rdg</gi> attribute is not displayed after transformation: a question mark (?) should be added manually.</p>
+                <p>► Correction in the edition, commented in the apparatus</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <choice xml:id="choice3"> (in the edition)
+                        <corr>σύμπαντα</corr>
+                        <sic>σινπαταν</sic>
+                    </choice>
+                    [...]
+                    <app loc="12" from="#choice3"> (in the apparatus)
+                        <note>So Mommsen, without comment.</note>
+                    </app>
+                </egXML>
+                <p>► To be more specific: pointing to a specific word or letter in the line. This solution does not require any specific tag in the edition:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <div type="edition">
+                        <ab>
+                            <lb n="1"/>Κύριε βοήθει τῷ σῷ δούλῳ
+                            <lb n="2"/><gap reason="lost" quantity="1" unit="line"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>λ
+                            [...]
+                        </ab>
+                    </div>
+                            <div type="apparatus">
+                                <listApp>
+                                    <app loc="3">
+                                        <lem>λ</lem>
+                                        <rdg>Μανουήλ, Μιχαήλ</rdg>
+                                    </app>
+                                </listApp>
+                            </div>
+                </egXML>
+                <p>Visualisation: 3: λ : Μανουήλ, Μιχαήλ</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <div type="edition">
+                        <ab>
+                            <lb n="1"/>Κύριε βοήθει τῷ σῷ δούλῳ
+                            <lb n="2"/><gap reason="lost" quantity="1" unit="line"/>
+                            <lb n="3"/><gap reason="lost" extent="unknown" unit="character"/>λ
+                            <!-- ... -->
+                        </ab>
+                    </div>
+                            <div type="apparatus">
+                                <listApp>
+                                    <app loc="3">
+                                        <lem>λ</lem>
+                                        <note>The first legible letter of the reverse is definitely λ (not an α, as read by Zacos-Veglery) and it is not followed by an abbreviation mark.</note>
+                                    </app>
+                                </listApp>
+                            </div>   
+                </egXML>
+                <p>Visualisation: 3: λ The first legible letter of the reverse is definitely λ (not an α, as read by Zacos-Veglery) and it is not followed by an abbreviation mark.</p>
+                <p>Nesting <gi>note</gi> inside <gi>rdg</gi> will add a colon (:) between lambda and the commentary at the beginning of the line (3: λ :).</p>
+                    <p>If no apparatus was needed, it should be explicitly mentioned in order to get a proper viualisation (<gi>hi</gi> <att>rend</att>="italic" could be added):</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <app>
+                        <note xml:lang="en">None.</note>
+                        <note xml:lang="fr">Aucun.</note>
+                    </app>
+                </egXML>
+                    <p>An alternative reading can be also displayed in the body of the text (<ref target="SigiDoc_editorial-altreading.html">see</ref>).</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

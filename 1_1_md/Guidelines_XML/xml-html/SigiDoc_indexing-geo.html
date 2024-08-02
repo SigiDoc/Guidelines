@@ -1,0 +1,77 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+      <link rel="icon" type="image/x-icon" href="../../favicon.png"/>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Place/geographical names</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         
+         <p>
+            
+            <h3>Elements</h3>
+            <ul class="speclit">
+               <li>&lt;placeName/&gt;</li>
+               <li>&lt;geogName/&gt;</li>
+            </ul>
+            
+         </p>
+         
+         
+         <h3>Explanation</h3>
+         
+         <p>1. Political entities (cities, peoples, regions, themes, etc.), but also buildings,
+            etc.:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;placeName</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">""</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">""</span><span class="xmlTag">&gt;</span>[name here]<span class="xmlTag">&lt;/placeName&gt;</span>
+                </pre>
+         <p>Because multiple tagging is possible, it could be used in different but complementary
+            ways, ex. for the cities:
+         </p>
+         
+         <p>• to depict the typology of a place: <span class="teiAtt">type</span>="city"
+         </p>
+         
+         <p>• to depict the function for which the name is used on the seal: <span class="teiAtt">type</span>="bishopric"
+         </p>
+         
+         <p>Ethnonyms should be tagged as place names: e.g. in "bishop of the Nikopolitôn", "Nikopolitôn"
+            should be indexed as Nikopolis.
+         </p>
+         
+         <p>2. Physical features (rivers, mountains, etc.):</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;geogName</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">""</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">""</span><span class="xmlTag">&gt;</span>[name here]<span class="xmlTag">&lt;/geogName&gt;</span>
+                </pre>
+         <p>• Designed for the actual place + reference to the authority list.</p>
+         
+         <p>• The <span class="teiAtt">type</span> attribute could be used to specify what kind of place/feature is: city, theme, diocesis,
+            church, etc., and it can also be used to identify ethnic names as opposed to the place
+            names themselves.
+         </p>
+         
+         <p>• The spelling should be normalised in the authority list.</p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

@@ -1,0 +1,64 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.5.5. Numerals: dates (years and indictions)</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>(see Explanation)</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;date</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>ἰ<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>νδικτιῶνι<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span> <span class="xmlTag">&lt;num</span><span class="xmlAttName"> value=</span><span class="xmlAttVal">"2"</span><span class="xmlTag">&gt;</span>Β<span class="xmlTag">&lt;/num&gt;</span>
+                    <span class="xmlTag">&lt;/date&gt;</span> = ἰ(νδικτιῶνι) Β´
+                    
+                    <span class="xmlTag">&lt;date</span><span class="xmlTag">&gt;</span>ἔτους <span class="xmlTag">&lt;num</span><span class="xmlAttName"> value=</span><span class="xmlAttVal">"512"</span><span class="xmlTag">&gt;</span>φιβ<span class="xmlTag">&lt;/num&gt;</span><span class="xmlTag">&lt;/date&gt;</span> = ἔτους φιβ´
+                    
+                    <span class="xmlTag">&lt;date</span><span class="xmlTag">&gt;</span>ἔτους
+                        <span class="xmlTag">&lt;num</span><span class="xmlAttName"> value=</span><span class="xmlAttVal">"512"</span><span class="xmlTag">&gt;</span>φιβ<span class="xmlTag">&lt;/num&gt;</span>, ἐν <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>ἰνδ<span class="xmlTag">&lt;/abbr&gt;</span><span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>ικτιῶνι<span class="xmlTag">&lt;/ex&gt;</span><span class="xmlTag">&lt;/expan&gt;</span> <span class="xmlTag">&lt;num</span><span class="xmlAttName"> value=</span><span class="xmlAttVal">"11"</span><span class="xmlTag">&gt;</span>ια<span class="xmlTag">&lt;/num&gt;</span>
+                    <span class="xmlTag">&lt;/date&gt;</span> = ἔτους φιβ´, ἐν ἰνδ(ικτιῶνι) ια´ [year+indiction]
+                </pre>
+         <p>Or it is possible to use the <span class="teiGi">calendar</span> element:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;teiHeader</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;profileDesc</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;calendarDesc</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;calendar</span><span class="xmlAttName"> xml:id=</span><span class="xmlAttVal">"indiction/byzantineWorldEra/..."</span><span class="xmlTag">/&gt;</span>
+                            <span class="xmlTag">&lt;/calendarDesc&gt;</span>
+                        <span class="xmlTag">&lt;/profileDesc&gt;</span>
+                    <span class="xmlTag">&lt;/teiHeader&gt;</span>
+                    [...]
+                    <span class="xmlTag">&lt;date</span><span class="xmlAttName"> when=</span><span class="xmlAttVal">"*"</span><span class="xmlAttName"> when-custom=</span><span class="xmlAttVal">"**"</span><span class="xmlAttName"> datingMethod=</span><span class="xmlAttVal">"#indiction/byzantineWorldEra/..."</span><span class="xmlTag">&gt;</span>
+                    <span class="xmlTag">&lt;/date&gt;</span>
+                </pre>
+         <p>*Date according to the modern calendar.</p>
+         
+         <p>**Date according to the ancient system (indiction, Byzantine world era, etc.).</p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

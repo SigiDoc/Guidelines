@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="form-supralinearetc">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2.3.1. Supralinear lines, underlining</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote>solved abbreviation, number</quote>
+                </cit>
+                <cit type="diplomatic"><!-- ace instead of abc to get a continous supraline -->
+                    <quote>a̅c̅e̅, a̲c̲e̲</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <hi rend="supraline">ace</hi>
+                    <hi rend="underline">ace</hi>
+                </egXML>
+                <p>Characters written with a supralinear line above, with solid line beneath, scored.</p>
+                <p>This is separate from any tagging of what that decoration might represent in the text, e.g. abbreviations or numerals.
+                    If that means numerals or abbreviations, these tags are for the diplomatic edition only (they could be useful when AthenaRuby has problems in creating supralines for abbreviations);
+                    in the editorial interpretation the abbreviation is solved (with appropriate tag), or there is the appropriate number.
+                </p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

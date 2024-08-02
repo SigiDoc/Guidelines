@@ -1,0 +1,51 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.3.1. Supralinear lines, underlining</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>solved abbreviation, number</b></li>
+            <li>Diplomatic edition: <b>a̅c̅e̅, a̲c̲e̲</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;hi</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"supraline"</span><span class="xmlTag">&gt;</span>ace<span class="xmlTag">&lt;/hi&gt;</span>
+                    <span class="xmlTag">&lt;hi</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"underline"</span><span class="xmlTag">&gt;</span>ace<span class="xmlTag">&lt;/hi&gt;</span>
+                </pre>
+         <p>Characters written with a supralinear line above, with solid line beneath, scored.</p>
+         
+         <p>This is separate from any tagging of what that decoration might represent in the text,
+            e.g. abbreviations or numerals.
+            If that means numerals or abbreviations, these tags are for the diplomatic edition
+            only (they could be useful when AthenaRuby has problems in creating supralines for
+            abbreviations);
+            in the editorial interpretation the abbreviation is solved (with appropriate tag),
+            or there is the appropriate number.
+            
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

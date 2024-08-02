@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="editorial-regularisation">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2.4.10. Regularisation</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote><hi rend="super" style="before">⌈</hi><quote style="middle">αβ</quote><hi rend="super" style="after">⌉</hi></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote>none</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <choice>
+                        <orig>αβγ</orig>
+                        <reg>δεζ</reg>
+                    </choice>
+                </egXML>
+                <p><gi>orig</gi> is for the part to be corrected and <gi>reg</gi> for the proposed correction.</p>
+                <p>Regularised spellings of irregular forms, such as dialect forms, late spellings, phonetic spellings, etc. (see also the previous).</p>
+                <p>These tags are intended to make a distinction between the scribal errors (for which see the previous entry)
+                    and text normalized or regularized from a dialect or phonetic spelling, grammatical form, etc.,
+                    which can not be considered errors strictly speaking. However, because there is not a Leiden symbol for this kind of regularisations,
+                    the output of this tagging after transformation is the same as the previous.</p>
+                <p>Alternative: leaving the original version in the edition and adding the correction in the external apparatus criticus (<ref target="SigiDoc_supp-apparatuscriticus.html">see</ref>).</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>
+

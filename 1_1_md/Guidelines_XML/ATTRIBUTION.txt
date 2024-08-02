@@ -1,0 +1,17 @@
+This work "The SigiDoc Guidelines" is an adaptation of
+
+"The EpiDoc Guidelines" by "the contributors"
+(Tom Elliott, Gabriel Bodard, Elli Mylonas, Hugh Cayless, Charlotte Tupman, et alia.),
+<http://epidoc.sourceforge.net/resources.shtml#guidelines>
+<http://www.stoa.org/epidoc/gl/>
+used under CC BY 3.0 (http://creativecommons.org/licenses/by/3.0/).
+
+This work "The SigiDoc Guidelines" is licensed under CC BY 3.0 (http://creativecommons.org/licenses/by/3.0/) by Alessio Sopracasa, Martina Filosa et alii: see LICENSE.txt for license details.
+
+The .css code contained in the "output" and "template" folders derives from "The EpiDoc Guidelines" and it has been partly changed; some code from "The EpiDoc Guidelines" has also been used for the .xsl code contained in the "output" folder and for the .html code of the template.html file contained in the "template" folder; .xml code from the "The EpiDoc Guidelines" has also been adapted for the .xml files contained in the "xml-html" folder.
+
+Some code used by "The SigiDoc Guidelines" comes from other sources, which are mentioned in the relevant files.
+
+This adaptation does not imply endorsement by the licensors receiving attribution here.
+
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="supp-bibliography">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>3.2. Bibliography</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <!--<div type="leiden">
+                <cit type="interpretive">
+                    <quote></quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote></quote>
+                </cit>
+            </div>-->
+            <div type="content">
+                <div type="code">
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="bibliography" subtype="edition"/>
+</egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="bibliography" subtype="parallels"/>
+</egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+    <div type="bibliography" subtype="discussion"/>
+</egXML>
+                </div>
+                <div type="explanation">
+                <p>The following way to insert bibliographic references assumes the existence of a TEI xml file named "bibliography.xml" living in EFES (ROOT>content>xml>authority).</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <p>
+                        <bibl>
+                            <ptr target="DOseals1"/>,<citedRange unit="page">p. 46</citedRange>
+                        </bibl>
+                    </p>
+                </egXML>
+                <p>Visualisation after transformation: DO Seals, 1, p. 46.</p>
+                <p><att>target</att>'s value is the ID of the publication as it appears in the file "bibliography.xml".</p>
+                    <p>About the 3 <att>subtype</att>s:</p>
+                    <p>"edition": edition(s) of the current item;</p>
+                    <p>"parallels": edition(s) of the parallels of the current item; the references should be preceded by the mention of the place of preservation and by the inventory numbers;</p>
+                    <p>"discussion": further bibliographic references - without publication - about the current item or its parallels; the references should be followed 
+                        by the mention of the place of preservation and by the inventory numbers between brackets.</p>
+                <p>A short bibliographic reference will be printed in the seal’s edition, while a bibliographic concordance will be automaticaly populated with the complete reference.</p>
+                    <p>Note that the element <gi>citedRange</gi> should be included also when empty, in order to populate the bibliographic concordance.</p>
+                <p>Bibliographic references could be added in this same way also in other <gi>div</gi>s.</p>
+                <p>The <gi>div</gi> should be repeated for each kind of bibliographic reference (edition, parallels, further references).</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

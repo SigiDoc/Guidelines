@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="editorial-charrestored">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2.4.1. Characters lost but restored</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote>[αβ]</quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote>none</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <supplied reason="lost">αβ</supplied> 
+                </egXML>
+                <p>Different cases:</p>
+                <p>1) <gi>gap</gi>+<gi>supplied</gi> - If inside the restoration there is also a lacuna, <gi>gap</gi> preceeds or follows <gi>supplied</gi>: </p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <gap reason="lost" quantity="2" unit="character"/><supplied reason="lost">abg</supplied> = [..abg]
+                    
+                    <supplied reason="lost">abg</supplied><gap reason="lost" quantity="2" unit="character"/> = [abg..]
+                    
+                    <gap reason="lost" unit="character"/><supplied reason="lost">abg</supplied> = [.. ? ..abg]
+                </egXML>
+                <p>Note: adding <att>quantity</att>, <att>extent</att> and <att>unit</att> to <gi>gap</gi>, or changing the <att>reason</att>'s value in 'illegible'
+                    will change the transformation according to the visualisation designed for those attributes/values.</p>
+                <p>2) <gi>expan</gi>+<gi>supplied</gi> - If the supplied text includes an expansion of abbreviation, <gi>expan</gi> is nested inside <gi>supplied</gi>:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <supplied reason="lost">
+                        <expan><abbr>a</abbr><ex>bg</ex></expan>
+                    </supplied> = [a(bg)]
+                </egXML>
+                <p>Otherwise, if an expansion of abbreviation includes a supplied text, <gi>supplied</gi> is nested inside <gi>expan</gi>:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <expan>
+                        <abbr>Au</abbr>
+                        <supplied reason="lost">
+                            <abbr>g</abbr>
+                            <ex>usti</ex>
+                        </supplied>
+                    </expan>
+                    <supplied reason="lost">Lici</supplied>nia = Au[g(usti) Lici]nia
+                </egXML>
+                <p>3) <gi>supplied</gi>+<gi>supplied</gi> - Adjacent lacunae, i.e. two or more words in the same restoration: <gi>supplied</gi> should be repeated for each word or part;
+                    note that the stylesheet will join together more consecutive restorations:</p>
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    Καῖσ<supplied reason="lost">αρ</supplied>
+                    <supplied reason="lost">Σεβαστὸς</supplied> = Καῖσ[αρ Σεβαστὸς]
+                </egXML>
+                <p>Note: a white space between these 2 elements should be added in order to separate the two parts inside the square brackets.</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

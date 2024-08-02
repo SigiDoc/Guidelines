@@ -1,0 +1,48 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.2.17. Illegible characters: quantity known</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>..</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;gap</span><span class="xmlAttName"> reason=</span><span class="xmlAttVal">"illegible"</span><span class="xmlAttName"> quantity=</span><span class="xmlAttVal">"2"</span><span class="xmlAttName"> unit=</span><span class="xmlAttVal">"character"</span><span class="xmlTag">/&gt;</span>  
+                </pre>
+         <p>Vestiges of letters visible but illegible.</p>
+         
+         <p>The maximun number of dots visualised after transformation is 25, representing a series
+            of 25 characters on a single line;
+            if more dots were needed, the relevant EpiDoc stylesheet should be modified
+            (this stylesheet in EFES lives in ROOT&gt;kiln&gt;stylesheets&gt;epidoc&gt;teigap.xsl, line 40;
+            note that EFES must be restarted), otherwise, over 25 the visualisation will change
+            to c. 26, c. 27, etc.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

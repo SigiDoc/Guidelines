@@ -1,0 +1,73 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+      <link rel="icon" type="image/x-icon" href="../../favicon.png"/>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">Letter variants and special characters</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         
+         <p>
+            
+            <h3>Elements</h3>
+            <ul class="speclit">
+               <li>&lt;c/&gt;</li>
+            </ul>
+            
+         </p>
+         
+         
+         <h3>Explanation</h3>
+         
+         <p>Important: <span class="teiGi">c</span> should be specified by a <span class="teiAtt">type</span> attribute, whose value(s) listed here are the only being currently handled by SigiDoc/EFES
+            autority lists and they should be used as they appear here:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;c</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"glyph"</span><span class="xmlAttName"> ana=</span><span class="xmlAttVal">"glyphs.xml#Kappa.1"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">""</span><span class="xmlTag">&gt;</span>[glyph here]<span class="xmlTag">&lt;/c&gt;</span>
+                </pre>
+         <p>Notice that here the attribute pointing to the authority list is <span class="teiAtt">ana</span> (and not <span class="teiAtt">ref</span>).
+         </p>
+         
+         <p>Designed for the diplomatic edition only and Athena Ruby as Greek font. 
+            The <span class="teiAtt">ana</span> will populate the first column of the glyphs' index with the specific variants, tagged
+            with <span class="teiGi">c</span>; the <span class="teiAtt">subtype</span>'s value should be:
+         </p>
+         
+         <p>1) in case of single letters, the corresponding standard Greek or Latin (or ...) letter
+            of the referenced glyph;
+         </p>
+         
+         <p>1bis) in case of superscript Greek letters, the @subtype's value should be "superscript";</p>
+         
+         <p>2) in case of ligatures, "greekLigatures" or "latinLigatures";</p>
+         
+         <p>3) in case of decoration elements, "decoration";</p>
+         
+         <p>4) in case of abbreviation signs, "abbreviation";</p>
+         
+         <p>5) in case of editorial interventions, "editorial".</p>
+         
+         <p>Not currently available.</p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

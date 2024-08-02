@@ -1,0 +1,164 @@
+body{
+   color: #000000;
+   background-color: #6F2232;
+   margin: 10pt;
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+div.content {
+padding: 0.8em 2em;
+  /*width: 98vw;*/
+  margin: 1em;
+  background-color: #fefefe;
+  border-radius: 0.4em;
+  border: 1px solid grey;
+
+  overflow-x: scroll;
+}
+
+h1 {
+color: #FFFFFF;
+margin: 1em;
+}
+
+h5.responsibility {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+ul.resp {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+p.version {
+    font-size: 0.9em;
+    bottom: 0;
+    font-style: italic;
+    margin: 1em;
+    color: #FFFFFF;
+/*    position: fixed;*/
+}
+
+div.pre,pre	{
+ font-family: monospace ;
+ margin: 5px;
+ padding: 6px;
+ white-space: pre;
+}
+
+span.element {
+    font-weight: bold;
+    color: black;
+}
+
+span.attribute {
+    font-weight: bold;
+    color: blue;
+}
+
+span.attributevalue {
+    font-weight: normal;
+    color: black;
+}
+
+span.tag, span.teiAtt, span.teiGi {
+  border: 0.5px solid silver;
+    border-radius: 0.4em;
+/*    box-shadow: 0.2em 0.2em 0.1em #888888; */
+    font-family: monospace;
+    background-color: #FFD;  
+    padding: 2px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}/* ???????????????????span.tag??????????????????????????????????????? */
+
+span.teiGi:before {
+    content: "<";
+}
+
+span.teiGi:after {
+    content: ">";
+}
+
+span.teiAtt:before {
+    content: "@"
+}
+
+/* table */
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  background-color:#B0C4DE;
+}
+
+tr.firstline {
+  border-top: 1px solid #D3D3D3;
+}
+
+th.separator, td.separator {
+  border-left: 1px solid #D3D3D3;
+}
+
+/*th.width {
+  width:30%;
+}
+
+th.width2 {
+  width:20%;
+}*/
+
+div.top-alignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  white-space: nowrap;
+}
+
+/* the following highlights the destination of the links from the template to the webpage */
+
+tr:target {
+  border: 2px solid red;
+  border-radius: 0.4em;
+}
+
+/* the following 3 added by Raketa */
+
+td.top {
+  vertical-align: top;
+}
+
+td.top table td {
+  height: 3em;
+}
+
+th.remarks {
+  min-width: 300px;
+}
+
+td.alup {
+  vertical-align: top;
+}
+
+/* the following for homepage logo */
+
+figure.logo1 {
+float:right;
+text-align:center;
+font-size:0.8em;
+}

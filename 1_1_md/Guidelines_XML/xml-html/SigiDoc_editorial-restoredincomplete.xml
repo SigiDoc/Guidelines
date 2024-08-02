@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="editorial-restoredincomplete">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>2.4.3. Word incompletely restored</title>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+                <respStmt>
+                    <resp/>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt><p/></publicationStmt>
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="content">
+                <div type="leiden">
+                <cit type="interpretive">
+                    <quote>[sta-·· ? ··]</quote>
+                </cit>
+                <cit type="diplomatic">
+                    <quote>none</quote>
+                </cit>
+            </div>
+            <div type="explanation">
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                    <w part="I">
+                        <supplied reason="lost">sta</supplied>
+                    </w>
+                    <gap reason="lost"/>
+                </egXML>
+                <p>In <gi>w</gi> the attribute <att>part</att> explains which part of the word has been restored, and, as a consequence, which part is missing. Its values are:</p>
+                    <p>"I" - the initial part of a word (i.e. the end is missing)</p>
+                    <p>"M" - the middle part of a word (i.e. the beginning and end are both missing)</p>
+                    <p>"F" - the final part of a word (i.e. the beginning is missing)</p>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>
+

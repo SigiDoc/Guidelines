@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../output/SigiDoc_all-guidelines.xsl"?>
+<?xml-stylesheet type="text/css" href="../output/SigiDoc_all-guidelines.css"?>
+
+<!-- Start license statement: do not remove:
+
+        SigiDoc Guidelines for enconding Byzantine seals in TEI-XML
+        Edition 1 copyright © 2021 by all contributors listed in <div type="responsibility"> below.
+        Additional contributors' copyright may be designated in individual source files.
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+         GNU General Public License for more details.
+     
+         You should have received a copy of the GNU General Public License
+         along with this program.  If not, see <https://www.gnu.org/licenses/>.
+         
+         Informations about SigiDoc can be obtained via https://sourceforge.net/projects/sigidoc/
+         
+         End license statement: do not remove -->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" xml:id="allsupp">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:id="homeGL">3. Commentary and Documentary Sections of the Seals' Edition</title>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile><graphic url=""></graphic></facsimile>
+    <text>
+        <body>
+            <div type="content">
+                <div type="intro">
+                <p>In this index is displayed a set of rules designed for SigiDoc in order to 
+                    prepare the sections which are necessary for a comprehensive and thorough sigillographic scholarly edition:</p>
+            </div>
+            <div type="contentList">
+                <list>
+                    <item><ref target="SigiDoc_supp-apparatuscriticus.html">3.1. Apparatus criticus</ref></item>
+                    <item><ref target="SigiDoc_supp-bibliography.html">3.2. Bibliography</ref></item>
+                    <item><ref target="SigiDoc_supp-commentary.html">3.3. Commentary</ref></item>
+                    <item><ref target="SigiDoc_supp-footnotes.html">3.4. Footnotes</ref></item>
+                    <item><ref target="SigiDoc_supp-translation.html">3.5. Translation</ref></item>
+                </list>
+            </div>
+            </div>
+            <div type="responsibility">
+                <listBibl>
+                    <bibl>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Alessio Sopracasa</name>
+                        </respStmt>
+                        <respStmt>
+                            <resp>Author</resp>
+                            <name>Martina Filosa</name>
+                        </respStmt>
+                    </bibl>
+                </listBibl>
+            </div>
+            <div type="version">
+                <p>SigiDoc version: 1.0</p>
+            </div>
+        </body>
+    </text>
+</TEI>

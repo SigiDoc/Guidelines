@@ -1,0 +1,54 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">3.3. Commentary</span></h1>
+      
+      
+      
+      
+      <section class="all">
+         
+         <section class="code">
+            <pre class="teiCode">
+    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"commentary"</span><span class="xmlAttName"> subtype=</span><span class="xmlAttVal">"text"</span><span class="xmlTag">/&gt;</span>
+</pre>
+            </section>
+         
+         <h3>Explanation</h3>
+         
+         <p>General comment on the text as a whole, with no specific line reference or textual
+            feature described:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;div</span><span class="xmlAttName"> type=</span><span class="xmlAttVal">"commentary"</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;p</span><span class="xmlTag">&gt;</span>...<span class="xmlTag">&lt;/p&gt;</span>
+                    <span class="xmlTag">&lt;/div&gt;</span>
+                </pre>
+         <p><span class="teiGi">p</span> may contain <span class="teiGi">bibl</span> (for bibliographic references).
+         </p>
+         
+         <p>Note that each <span class="teiGi">p</span> will generate a paragraph separated by a white line from the others.
+         </p>
+         
+         <p>The attribute <span class="teiAtt">subtype</span> differentiates this <span class="teiGi">div</span> <span class="teiAtt">type</span>="commentary" from the one designed for footnotes (<span class="teiGi">div</span> <span class="teiAtt">type</span>="commentary" <span class="teiAtt">subtype</span>="footnotes").
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

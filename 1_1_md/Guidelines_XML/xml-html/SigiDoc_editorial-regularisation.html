@@ -1,0 +1,61 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.4.10. Regularisation</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b><sup>⌈</sup>αβ<sup>⌉</sup></b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;choice</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;orig</span><span class="xmlTag">&gt;</span>αβγ<span class="xmlTag">&lt;/orig&gt;</span>
+                        <span class="xmlTag">&lt;reg</span><span class="xmlTag">&gt;</span>δεζ<span class="xmlTag">&lt;/reg&gt;</span>
+                    <span class="xmlTag">&lt;/choice&gt;</span>
+                </pre>
+         <p><span class="teiGi">orig</span> is for the part to be corrected and <span class="teiGi">reg</span> for the proposed correction.
+         </p>
+         
+         <p>Regularised spellings of irregular forms, such as dialect forms, late spellings, phonetic
+            spellings, etc. (see also the previous).
+         </p>
+         
+         <p>These tags are intended to make a distinction between the scribal errors (for which
+            see the previous entry)
+            and text normalized or regularized from a dialect or phonetic spelling, grammatical
+            form, etc.,
+            which can not be considered errors strictly speaking. However, because there is not
+            a Leiden symbol for this kind of regularisations,
+            the output of this tagging after transformation is the same as the previous.
+         </p>
+         
+         <p>Alternative: leaving the original version in the edition and adding the correction
+            in the external apparatus criticus (<a href="SigiDoc_supp-apparatuscriticus.html" target="_blank">see</a>).
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

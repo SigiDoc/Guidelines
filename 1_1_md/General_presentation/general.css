@@ -1,0 +1,93 @@
+body{
+   color: #000000;
+   background-color: #6F2232;
+   margin: 10pt;
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+div.content {
+       padding: 0.8em 2em;
+    margin: 1em;
+    background-color: #FEFEFE;
+        border-radius: 0.4em;
+    border: 1px solid grey;
+    line-height: 1.5em;
+}
+
+div.title {
+color: #FFFFFF;
+margin: 1em;
+}
+
+/* for homepage and Huma-Num logos -- change 2021-09-26, styled Huma-Num image within div*/
+figure.gen {
+float:right;
+text-align:center;
+border:thin silver solid;
+font-size:0.8em;
+}
+
+figure.logo2 {
+float:right;
+position:relative;
+}
+
+/*div.logo1 {
+float: right;
+left: -120px;
+position: relative;
+top: -120px;
+}*/
+
+figure.page {
+float:left;
+text-align:center;
+border:thin silver solid;
+font-size:0.8em;
+}
+
+h5.responsibility {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+ul.resp {
+    font-size: 0.9em;
+    margin: 1em;
+    color: #FFFFFF;
+}
+
+p.version {
+    font-size: 0.9em;
+    bottom: 0;
+    font-style: italic;
+    margin: 1em;
+    color: #FFFFFF;
+/*    position: fixed;*/
+}
+
+/*added by MF March 2023*/
+
+footer {
+    padding: 0.8em 2em;
+    margin: 1em;
+    background-color: #FEFEFE;
+    border-radius: 0.4em;
+    border: 1px solid grey;
+    line-height: 1em;
+}
+
+p#logos {
+    text-align: center;
+    line-height: 4em;
+    margin: 1em;
+}
+
+p#licence span {
+    font-size: smaller;
+    color: #000000;
+    text-align: center;
+}

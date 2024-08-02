@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- LAST MODIFIED: 2023-03-19 -->
+
+<html>
+<head><link rel="stylesheet" href="General_presentation/general.css" type="text/css"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>SigiDoc 1.1</title>
+    
+</head>
+
+    <body>
+    <!-- SD image here -->
+    
+        <div class="title">
+        
+            <h1 class="main-title">SigiDoc 1.1 <i>(these Guidelines are currently under development)</i></h1>
+        
+            <h3 class="by">developed by
+            <a href="https://orcid.org/0000-0001-7973-7301" target="_blank" style="color:#FFFFFF">Alessio 
+            Sopracasa</a> &amp;
+            <a href="https://orcid.org/0000-0003-1900-4231" target="_blank" style="color:#FFFFFF">Martina Filosa</a>
+            </h3>
+            <h3>with the <a href="General_presentation/SD2.html#dbs-members" target="_blank" style="color:#FFFFFF">members of the DigiByzSeal project</a></h3>
+        </div>
+    
+        <div class="content">
+        
+            <p>SigiDoc is an XML-based and TEI-compliant standard, largely based on the experience of EpiDoc, for the encoding of Byzantine 
+                seals. SigiDoc represents the first attempt to extend the digital approach - 
+            already applied to inscriptions, coins and papyri - to Byzantine seals: it 
+            allows the scholarly edition of the seals (as objects, texts, and images) and the 
+            valorisation of the data coming from them. The 
+            transformation of XML documents into a webpage, various indexing possibilities, 
+            a search interface as well as multi-lingual features are delivered to SigiDoc 
+            by EFES (EpiDoc Front-End Services).</p>
+            <p>The current version of the SigiDoc Guidelines is the 1.1: it represents the first development of these Guidelines since their first release,
+                in September 2021. Other developments are planned during the year 2023. They are being implemented in the framework of a French-German project - <i>DigiByzSeal</i> (jointy funded by the <a href="https://anr.fr/Project-ANR-21-FRAL-0008" target="_blank">Agence Nationale de la Recherche</a> and the <a href="https://gepris.dfg.de/gepris/projekt/469385434" target="_blank">Deutsche Forschungsgemeinschaft</a>) -
+                involving the <a href="https://www.orient-mediterranee.com/team/monde-byzantin/" target="_blank">Monde byzantin</a> team of the CNRS (Paris),
+                the <a href="https://ifa.phil-fak.uni-koeln.de/en/forschung/byzantinistik-und-neugriechische-philologie-forschung/drittmittel-projekte/digibyzseal" target="_blank">Department of Byzantine Studies and Modern Greek Philology </a>of the University of Cologne
+                and the <a href="https://cceh.uni-koeln.de/portfolio/seals-byzantine-studies/" target="_blank">Cologne Center for eHumanities</a> of the University of Cologne:
+                the enhancement of the SigiDoc recommendations is a key objective of <i>DigiByzSeal</i>.</p>
+        
+        <h4><i>Introductory and preparatory readings</i></h4>
+            <ul>
+                <li><a href="General_presentation/SD2.html" target="_blank">Introducing SigiDoc</a></li>
+                <!--<li><a href="https://sigidoc.hypotheses.org/" target="_blank">SigiDoc's blog</a>: news about SigiDoc will be available through the platform 'Hypothèses': developments of the standard, publications, conferences and presentations, training events, &#8211; etc.</li>-->
+                <li>Introduction to XML (<a href="https://www.w3schools.com/xml/" target="_blank">W3 Schools</a>, <a href="https://en.wikipedia.org/wiki/XML" target="_blank">Wikipedia</a>) and 
+                to <a href="https://tei-c.org/support/learn/" target="_blank">TEI</a>.</li>
+            </ul>
+        
+        <h4><i>SigiDoc's Components (version 1.1)</i></h4>
+            <ul>
+                <li><a href="Guidelines_XML/xml-html/SigiDoc_allguidelines.html" target="_blank">Guidelines</a>: recommendations especially focused
+                    on the markup of seals' legends and the indexing of the information coming from them. The XML files containing the Guidelines are available <a href="https://sourceforge.net/p/sigidoc/code/HEAD/tree/trunk/guidelines/" target="_blank">here</a>.</li>
+                <li><a href="Guidelines_XML/template/template.html" target="_blank">Template</a>: the XML structure of a SigiDoc file, presented and explained in detail, and linked to the <a href="Guidelines_XML/template/webpage.html" target="_blank">list of field names</a> composing the final web page generated from this template. An XML file containing the SigiDoc template and ready to be used is available <a href="https://sourceforge.net/p/sigidoc/code/HEAD/tree/trunk/template/" target="_blank">here</a>.</li>
+                <li><a href="https://sourceforge.net/p/sigidoc/code/HEAD/tree/trunk/schema/" target="_blank">Schema</a>: largely based on EpiDoc's customisation of the TEI schema, the SigiDoc schema makes a selection in order to better fit with the sigillographic needs and introduces several attributes' values; currently, SigiDoc XML files successfully validate against the lastest EpiDoc schema and the tei_all schema <i>[the latter feature is currently being tested for the 1.1 version of the SigiDoc schema]</i>.</li>
+                <li><a href="https://github.com/SigiDoc/SigiDoc_Latest" target="_blank">SigiDoc/EFES source code</a>: highly customised version of EFES for the needs of Byzantine sigillography and ready to be deployed and populated with the XML edition files.
+                </li>
+            </ul>
+            
+            <h4><i>Mandatory Readings</i></h4>
+            <ul>
+                <li><a href="http://www.stoa.org/epidoc/gl/latest/" target="_blank">EpiDoc 
+                    guidelines</a>: SigiDoc being a subset of EpiDoc, reading the EpiDoc 
+                    guidelines is highly recommended (current version 9.4).</li>
+                <li><a href="https://github.com/EpiDoc/EFES/wiki" target="_blank">EFES guidelines</a>: EFES 
+                    is the platform through which SigiDoc is displayed, therefore a good understanding of its functionalities is of great help to SigiDoc's users.</li>
+            </ul>
+            
+            <h4><i>A test-corpus</i></h4>
+            <p>In order to illustrate the encoding of Byzantine seals in SigiDoc and their publication through EFES, a test-corpus consisting of the digital enhancement of a <a href="https://www.academia.edu/35717193/Sceaux_byzantins_de_la_collection_Sopracasa_Byzantine_seals_from_the_Sopracasa_collection_" target="_blank">paper publication</a> is available <a href="https://sigidoc.raketadesign.com/en/" target="_blank">here</a>.
+                The source code is available in a <a href="https://github.com/SigiDoc/SigiDoc_Latest" target="_blank">GitHub repository</a>. </p>
+            
+           <!-- <h4>Acknowledgements</h4>
+            <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>-->
+        
+        </div>
+        
+        <div>
+            <h5 class="responsibility">Responsibility for this page</h5>
+            <ul class="resp">
+                <li>Author: Alessio Sopracasa</li>
+                <li>Author: Martina Filosa</li>
+            </ul>
+        </div>
+        <div>
+            <p class="version">SigiDoc version: 1.1</p>
+        </div>
+        
+        <footer>
+            <p id="logos">
+                <a href="https://www.huma-num.fr/" target="_blank">
+                    <img alt="HumaNum" style="height:3.0em; padding-right:1em" src="logo-petit-hn-rvb.png" />
+                </a>
+                <a href="https://anr.fr/" target="_blank">
+                    <img style="height:3.0em; padding-right:1em" alt="ANR" src="anr.jpg" />
+                </a>
+                <a href="https://www.dfg.de/" target="_blank">
+                    <img style="height:3.5em; padding-right:0.7em; padding-left:0.5em" alt="DFG"
+                        src="dfg.jpg" />
+                </a>
+                <a href="https://cceh.uni-koeln.de/" target="_blank">
+                    <img style="height:3.5em; padding-right:1em; padding-left:0.5em"
+                        alt="CCeH - Cologne Center for eHumanities" src="cceh.png" />
+                </a>
+                <a href="https://www.uni-koeln.de/" target="_blank">
+                    <img style="height:4.0em; padding-right:1.3em; padding-left:0.5em"
+                        alt="Universität zu Köln" src="uzk.png" />
+                </a>
+                <a href="https://www.orient-mediterranee.com/" target="_blank">
+                    <img style="height:3.5em; padding-right:1.3em; padding-left:0.5em"
+                        alt="Orient et Méditerranée UMR 8167 CNRS"
+                        src="https://www.orient-mediterranee.com/wp-content/uploads/2023/02/logo-om_2.svg"
+                    />
+                </a>
+            </p>
+            <p id="licence">
+                <a href="https://creativecommons.org/licenses/by/4.0/">
+                    <img alt="CC BY"
+                        style="padding-left:0.9em; padding-right:0.9em; padding-bottom:0.2em"
+                        src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+                </a>
+                <span>DigiByzSeal - Unlocking the Hidden Value of Seals: New Methodologies
+                    for Historical Research in Byzantine Studies</span>
+            </p>
+        </footer>
+        
+        <!--<div class="logo1"><figure><a href="https://www.huma-num.fr/" target="_blank"><img src="logo-petit-hn-rvb.png" style="position:absolute"/></a></figure></div>-->
+    </body>
+</html>

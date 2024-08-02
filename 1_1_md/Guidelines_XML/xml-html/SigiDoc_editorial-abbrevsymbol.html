@@ -1,0 +1,68 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.4.14. Expansion of symbol</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>(Ὁ ἅγιος)</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>Using Athena Ruby for the diplomatic edition means that the tagging for the editorial
+            interpretation could be very limited:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>Ὁ ἅγιος<span class="xmlTag">&lt;/ex&gt;</span>
+                    <span class="xmlTag">&lt;/expan&gt;</span>
+                </pre>
+         <p>Note that <span class="teiGi">abbr</span> is not used in this case.
+         </p>
+         
+         <p>If Athena Ruby was not used, a tagging a bit more elaborated would be required, with
+            <span class="teiGi">am</span> and <span class="teiGi">g</span> in the legend, and <span class="teiGi">charDecl</span>:
+         </p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;expan</span><span class="xmlTag">&gt;</span>
+                        <span class="xmlTag">&lt;abbr</span><span class="xmlTag">&gt;</span>
+                            <span class="xmlTag">&lt;am</span><span class="xmlTag">&gt;</span>
+                                <span class="xmlTag">&lt;g</span><span class="xmlAttName"> ref=</span><span class="xmlAttVal">"#hoHagios"</span><span class="xmlTag">&gt;</span><span class="xmlTag">&lt;/g&gt;</span>
+                            <span class="xmlTag">&lt;/am&gt;</span>
+                        <span class="xmlTag">&lt;/abbr&gt;</span>
+                        <span class="xmlTag">&lt;ex</span><span class="xmlTag">&gt;</span>Ὁ ἅγιος<span class="xmlTag">&lt;/ex&gt;</span>
+                    <span class="xmlTag">&lt;/expan&gt;</span>
+                </pre>
+         <p>In this case the <span class="teiGi">abbr</span> element will be used, with the addition of <span class="teiGi">am</span> (abbreviation mark),
+            to indicate that the symbol, while part of the abbreviation, is not part of the resolved
+            word (i.e. the symbol in <span class="teiGi">g</span> will not be visualised).
+         </p>
+         
+         <p>See also: "<a href="SigiDoc_form-symbolnotmean.html" target="_blank">Symbols"</a> (not meaning-bearing).
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>

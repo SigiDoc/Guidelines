@@ -1,0 +1,56 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="../output/eg.css">
+      <link rel="stylesheet" type="text/css" href="../output/SigiDoc_guidelines.css">
+      <title>SigiDoc Guidelines</title>
+   </head>
+   <body>
+      
+      <h1><a href="../xml-html/SigiDoc_allguidelines.html" target="_blank"><img src="../../General_presentation/outline_home_white_24dp.png"></a><span class="head">2.3.2. Raised or lowered characters</span></h1>
+      
+      
+      
+      <section class="all">
+         
+         <h3>Leiden symbols</h3>
+         <ul class="leiden">
+            <li>Editorial interpretation: <b>(none)</b></li>
+            <li>Diplomatic edition: <b>none</b></li>
+         </ul>
+         
+         <h3>Explanation</h3>
+         
+         <p>Characters written higher than the surrounding text:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;hi</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"superscript"</span><span class="xmlTag">&gt;</span>γ<span class="xmlTag">&lt;/hi&gt;</span> = αβᵞ
+                </pre>
+         <p>Characters written lower than the surrounding text:</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;hi</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"subscript"</span><span class="xmlTag">&gt;</span>γ<span class="xmlTag">&lt;/hi&gt;</span> = αβᵧ
+                </pre>
+         <p>Character written directly above another character (as opposed to superscript):</p>
+         <pre class="teiCode">
+                    <span class="xmlTag">&lt;hi</span><span class="xmlAttName"> rend=</span><span class="xmlAttVal">"stacked"</span><span class="xmlTag">&gt;</span>c<span class="xmlTag">&lt;/hi&gt;</span>
+                </pre>
+         <p> but it is not currently handled by stylesheets.</p>
+         
+         <p>If it is for an abbreviation or something supposed to be ‘regularised’ in the edition,
+            those characters should appear above or below line only in the diplomatic edition,
+            especially using Athena Ruby; but sometimes they are simply written like this, and
+            should be represented in the editorial interpretation too.
+         </p>
+         
+         
+      </section>
+      
+      <h5 style="color:#FFFFFF; margin-left: 1em">Responsibility for this page</h5>
+      <ul class="resp">Author: Alessio Sopracasa</ul>
+      <ul class="resp">Author: Martina Filosa</ul>
+      <span class="version">
+         <p>SigiDoc version: 1.0</p></span>
+      
+      
+      
+   </body>
+</html>
